@@ -1,0 +1,33 @@
+<p>
+  <b>Rent code:</b>
+  <%=h @rent.rent_code %>
+</p>
+
+<p>
+  <b>Movie code:</b>
+  <%=h @rent.movie_code %>
+</p>
+
+<p>
+  <b>Client code:</b>
+  <%=h @rent.client_code %>
+</p>
+
+<p>
+  <b>Emp code:</b>
+  <%=h @rent.emp_code %>
+</p>
+
+<p>
+  <b>Rent date:</b>
+  <%=h @rent.rent_date %>
+</p>
+
+<p>
+  <b>Exp date:</b>
+  <%=h @rent.exp_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_rent_path(@rent) %> |
+<%= link_to 'Back', rents_path %>

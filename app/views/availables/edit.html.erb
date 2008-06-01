@@ -1,0 +1,22 @@
+<h1>Editing available</h1>
+
+<%= error_messages_for :available %>
+
+<% form_for(@available) do |f| %>
+  <p>
+    <b>Movie code</b><br />
+    <%= f.text_field :movie_code %>
+  </p>
+
+  <p>
+    <b>Available</b><br />
+    <%= f.check_box :available %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @available %> |
+<%= link_to 'Back', availables_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  movie_code: 1
+  movie_title: MyString
+  movie_original_title: MyString
+  movie_year: 1
+  movie_director: MyString
+  genre: MyString
+  country: MyString
+  place_in_store: MyString
+  category_code: 1
+
+two:
+  movie_code: 1
+  movie_title: MyString
+  movie_original_title: MyString
+  movie_year: 1
+  movie_director: MyString
+  genre: MyString
+  country: MyString
+  place_in_store: MyString
+  category_code: 1

@@ -1,0 +1,43 @@
+<p>
+  <b>Client code:</b>
+  <%=h @client.client_code %>
+</p>
+
+<p>
+  <b>Client:</b>
+  <%=h @client.client_id %>
+</p>
+
+<p>
+  <b>Client name:</b>
+  <%=h @client.client_name %>
+</p>
+
+<p>
+  <b>Client surname:</b>
+  <%=h @client.client_surname %>
+</p>
+
+<p>
+  <b>Sing up date:</b>
+  <%=h @client.sing_up_date %>
+</p>
+
+<p>
+  <b>Birth date:</b>
+  <%=h @client.birth_date %>
+</p>
+
+<p>
+  <b>Client state:</b>
+  <%=h @client.client_state %>
+</p>
+
+<p>
+  <b>Home address:</b>
+  <%=h @client.home_address %>
+</p>
+
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>

@@ -1,0 +1,32 @@
+<h1>Listing employees</h1>
+
+<table>
+  <tr>
+    <th>Emp code</th>
+    <th>Emp</th>
+    <th>Emp name</th>
+    <th>Emp surname</th>
+    <th>Emp state</th>
+    <th>Start date</th>
+    <th>Home address</th>
+  </tr>
+
+<% for employee in @employees %>
+  <tr>
+    <td><%=h employee.emp_code %></td>
+    <td><%=h employee.emp_id %></td>
+    <td><%=h employee.emp_name %></td>
+    <td><%=h employee.emp_surname %></td>
+    <td><%=h employee.emp_state %></td>
+    <td><%=h employee.start_date %></td>
+    <td><%=h employee.home_address %></td>
+    <td><%= link_to 'Show', employee %></td>
+    <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+    <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New employee', new_employee_path %>

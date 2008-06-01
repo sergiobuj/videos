@@ -1,0 +1,22 @@
+<h1>Editing cast</h1>
+
+<%= error_messages_for :cast %>
+
+<% form_for(@cast) do |f| %>
+  <p>
+    <b>Movie code</b><br />
+    <%= f.text_field :movie_code %>
+  </p>
+
+  <p>
+    <b>Actor actress name</b><br />
+    <%= f.text_field :actor_actress_name %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @cast %> |
+<%= link_to 'Back', casts_path %>

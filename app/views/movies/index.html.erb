@@ -1,0 +1,36 @@
+<h1>Listing movies</h1>
+
+<table>
+  <tr>
+    <th>Movie code</th>
+    <th>Movie title</th>
+    <th>Movie original title</th>
+    <th>Movie year</th>
+    <th>Movie director</th>
+    <th>Genre</th>
+    <th>Country</th>
+    <th>Place in store</th>
+    <th>Category code</th>
+  </tr>
+
+<% for movie in @movies %>
+  <tr>
+    <td><%=h movie.movie_code %></td>
+    <td><%=h movie.movie_title %></td>
+    <td><%=h movie.movie_original_title %></td>
+    <td><%=h movie.movie_year %></td>
+    <td><%=h movie.movie_director %></td>
+    <td><%=h movie.genre %></td>
+    <td><%=h movie.country %></td>
+    <td><%=h movie.place_in_store %></td>
+    <td><%=h movie.category_code %></td>
+    <td><%= link_to 'Show', movie %></td>
+    <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+    <td><%= link_to 'Destroy', movie, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New movie', new_movie_path %>

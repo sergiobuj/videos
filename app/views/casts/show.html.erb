@@ -1,0 +1,13 @@
+<p>
+  <b>Movie code:</b>
+  <%=h @cast.movie_code %>
+</p>
+
+<p>
+  <b>Actor actress name:</b>
+  <%=h @cast.actor_actress_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_cast_path(@cast) %> |
+<%= link_to 'Back', casts_path %>

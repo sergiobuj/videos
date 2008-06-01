@@ -1,0 +1,21 @@
+<h1>New phone</h1>
+
+<%= error_messages_for :phone %>
+
+<% form_for(@phone) do |f| %>
+  <p>
+    <b>Code person</b><br />
+    <%= f.text_field :code_person %>
+  </p>
+
+  <p>
+    <b>Phone number</b><br />
+    <%= f.text_field :phone_number %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', phones_path %>

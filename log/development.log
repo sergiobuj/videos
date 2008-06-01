@@ -1,0 +1,54 @@
+  [4;36;1mSQL (0.000431)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.013315)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.097964)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000482)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateClients (1)
+  [4;35;1mSQL (0.005948)[0m   [0mCREATE TABLE clients ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "client_code" integer DEFAULT NULL, "client_id" integer DEFAULT NULL, "client_name" varchar(255) DEFAULT NULL, "client_surname" varchar(255) DEFAULT NULL, "sing_up_date" date DEFAULT NULL, "birth_date" date DEFAULT NULL, "client_state" varchar(255) DEFAULT NULL, "home_address" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002697)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000452)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreatePhones (2)
+  [4;36;1mSQL (0.003934)[0m   [0;1mCREATE TABLE phones ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code_person" integer DEFAULT NULL, "phone_number" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003051)[0m   [0mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000400)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateEmployees (3)
+  [4;35;1mSQL (0.004362)[0m   [0mCREATE TABLE employees ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "emp_code" integer DEFAULT NULL, "emp_id" integer DEFAULT NULL, "emp_name" varchar(255) DEFAULT NULL, "emp_surname" varchar(255) DEFAULT NULL, "emp_state" varchar(255) DEFAULT NULL, "start_date" date DEFAULT NULL, "home_address" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002949)[0m   [0;1mUPDATE schema_info SET version = 3[0m
+  [4;35;1mSQL (0.000487)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateRents (4)
+  [4;36;1mSQL (0.004407)[0m   [0;1mCREATE TABLE rents ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rent_code" integer DEFAULT NULL, "movie_code" integer DEFAULT NULL, "client_code" integer DEFAULT NULL, "emp_code" integer DEFAULT NULL, "rent_date" date DEFAULT NULL, "exp_date" date DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002692)[0m   [0mUPDATE schema_info SET version = 4[0m
+  [4;36;1mSQL (0.000407)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateReturns (5)
+  [4;35;1mSQL (0.004804)[0m   [0mCREATE TABLE returns ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rent_code" integer DEFAULT NULL, "return_date" date DEFAULT NULL, "charges" integer DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002767)[0m   [0;1mUPDATE schema_info SET version = 5[0m
+  [4;35;1mSQL (0.000258)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateMovies (6)
+  [4;36;1mSQL (0.004169)[0m   [0;1mCREATE TABLE movies ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movie_code" integer DEFAULT NULL, "movie_title" varchar(255) DEFAULT NULL, "movie_original_title" varchar(255) DEFAULT NULL, "movie_year" integer DEFAULT NULL, "movie_director" varchar(255) DEFAULT NULL, "genre" varchar(255) DEFAULT NULL, "country" varchar(255) DEFAULT NULL, "place_in_store" varchar(255) DEFAULT NULL, "category_code" integer DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002834)[0m   [0mUPDATE schema_info SET version = 6[0m
+  [4;36;1mSQL (0.000350)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateCategories (7)
+  [4;35;1mSQL (0.006171)[0m   [0mCREATE TABLE categories ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "category_code" integer DEFAULT NULL, "rent_price" integer DEFAULT NULL, "rent_days" integer DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002615)[0m   [0;1mUPDATE schema_info SET version = 7[0m
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateAvailables (8)
+  [4;36;1mSQL (0.003714)[0m   [0;1mCREATE TABLE availables ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movie_code" integer DEFAULT NULL, "available" boolean DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003302)[0m   [0mUPDATE schema_info SET version = 8[0m
+  [4;36;1mSQL (0.000278)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateCasts (9)
+  [4;35;1mSQL (0.003756)[0m   [0mCREATE TABLE casts ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movie_code" integer DEFAULT NULL, "actor_actress_name" varchar(255) DEFAULT NULL, "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002536)[0m   [0;1mUPDATE schema_info SET version = 9[0m
+  [4;35;1mSQL (0.000344)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000901)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000132)[0m   [0mPRAGMA index_list(availables)[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mPRAGMA index_list(casts)[0m
+  [4;35;1mSQL (0.000136)[0m   [0mPRAGMA index_list(categories)[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mPRAGMA index_list(clients)[0m
+  [4;35;1mSQL (0.000096)[0m   [0mPRAGMA index_list(employees)[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mPRAGMA index_list(movies)[0m
+  [4;35;1mSQL (0.000089)[0m   [0mPRAGMA index_list(phones)[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mPRAGMA index_list(rents)[0m
+  [4;35;1mSQL (0.000090)[0m   [0mPRAGMA index_list(returns)[0m

@@ -1,0 +1,2 @@
+module AvailablesHelper
+end

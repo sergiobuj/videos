@@ -1,0 +1,22 @@
+<h1>Listing availables</h1>
+
+<table>
+  <tr>
+    <th>Movie code</th>
+    <th>Available</th>
+  </tr>
+
+<% for available in @availables %>
+  <tr>
+    <td><%=h available.movie_code %></td>
+    <td><%=h available.available %></td>
+    <td><%= link_to 'Show', available %></td>
+    <td><%= link_to 'Edit', edit_available_path(available) %></td>
+    <td><%= link_to 'Destroy', available, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New available', new_available_path %>

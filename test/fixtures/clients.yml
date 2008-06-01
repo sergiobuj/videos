@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  client_code: 1
+  client_id: 1
+  client_name: MyString
+  client_surname: MyString
+  sing_up_date: 2008-06-01
+  birth_date: 2008-06-01
+  client_state: MyString
+  home_address: MyString
+
+two:
+  client_code: 1
+  client_id: 1
+  client_name: MyString
+  client_surname: MyString
+  sing_up_date: 2008-06-01
+  birth_date: 2008-06-01
+  client_state: MyString
+  home_address: MyString

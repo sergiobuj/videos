@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rent_code: 1
+  return_date: 2008-06-01
+  charges: 1
+
+two:
+  rent_code: 1
+  return_date: 2008-06-01
+  charges: 1

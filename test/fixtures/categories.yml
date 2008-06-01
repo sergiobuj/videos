@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  category_code: 1
+  rent_price: 1
+  rent_days: 1
+
+two:
+  category_code: 1
+  rent_price: 1
+  rent_days: 1

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  emp_code: 1
+  emp_id: 1
+  emp_name: MyString
+  emp_surname: MyString
+  emp_state: MyString
+  start_date: 2008-06-01
+  home_address: MyString
+
+two:
+  emp_code: 1
+  emp_id: 1
+  emp_name: MyString
+  emp_surname: MyString
+  emp_state: MyString
+  start_date: 2008-06-01
+  home_address: MyString

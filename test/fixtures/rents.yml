@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rent_code: 1
+  movie_code: 1
+  client_code: 1
+  emp_code: 1
+  rent_date: 2008-06-01
+  exp_date: 2008-06-01
+
+two:
+  rent_code: 1
+  movie_code: 1
+  client_code: 1
+  emp_code: 1
+  rent_date: 2008-06-01
+  exp_date: 2008-06-01

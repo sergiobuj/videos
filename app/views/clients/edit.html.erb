@@ -1,0 +1,52 @@
+<h1>Editing client</h1>
+
+<%= error_messages_for :client %>
+
+<% form_for(@client) do |f| %>
+  <p>
+    <b>Client code</b><br />
+    <%= f.text_field :client_code %>
+  </p>
+
+  <p>
+    <b>Client</b><br />
+    <%= f.text_field :client_id %>
+  </p>
+
+  <p>
+    <b>Client name</b><br />
+    <%= f.text_field :client_name %>
+  </p>
+
+  <p>
+    <b>Client surname</b><br />
+    <%= f.text_field :client_surname %>
+  </p>
+
+  <p>
+    <b>Sing up date</b><br />
+    <%= f.date_select :sing_up_date %>
+  </p>
+
+  <p>
+    <b>Birth date</b><br />
+    <%= f.date_select :birth_date %>
+  </p>
+
+  <p>
+    <b>Client state</b><br />
+    <%= f.text_field :client_state %>
+  </p>
+
+  <p>
+    <b>Home address</b><br />
+    <%= f.text_field :home_address %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @client %> |
+<%= link_to 'Back', clients_path %>

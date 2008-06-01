@@ -1,0 +1,13 @@
+<p>
+  <b>Movie code:</b>
+  <%=h @available.movie_code %>
+</p>
+
+<p>
+  <b>Available:</b>
+  <%=h @available.available %>
+</p>
+
+
+<%= link_to 'Edit', edit_available_path(@available) %> |
+<%= link_to 'Back', availables_path %>
