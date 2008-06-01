@@ -1,0 +1,17 @@
+client client_code:integer client_id:integer client_name:string client_surname:string sing_up_date:date birth_date:date client_state:string home_address:string
+
+phone code_person:integer phone_number:string
+
+employee emp_code:integer emp_id:integer emp_name:string emp_surname:string emp_state:string start_date:date home_address:string 
+
+rent rent_code:integer movie_code:integer client_code:integer emp_code:integer rent_date:date exp_date:date
+
+return rent_code:integer return_date:date charges:integer
+
+movie movie_code:integer movie_title:string movie_original_title:string movie_year:integer movie_director:string genre:string country:string place_in_store:string category_code:integer 
+
+category category_code:integer rent_price:integer rent_days:integer
+
+available movie_code:integer available:boolean
+
+cast movie_code:integer actor_actress_name:string

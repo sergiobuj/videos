@@ -5,13 +5,13 @@ validates_numericality_of :rent_code, :charges
 validate :valid_rent_code, :valid_charges
 protected
 def valid_rent_code
-    errors.add(:rent_code, ' has to be numerical and greater than zero' ) if rent_code.nil? ||
+    errors.add(:rent_code, 'The rent code has to be numerical and greater than zero' ) if rent_code.nil? ||
     rent_code < 0
 end
 
 protected
 def valid_rent_code
-    errors.add(:charges, ' to be numerical and greater/equal than zero' ) if charges.nil? ||
+    errors.add(:charges, 'The charge has to be numerical and greater/equal than zero' ) if charges.nil? ||
     charges <= -1
 end
 

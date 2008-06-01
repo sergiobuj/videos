@@ -2,7 +2,7 @@ class Category < ActiveRecord::Base
 validates_presence_of :category_code, :rent_price, :rent_days
 validates_numericality_of :category_code, :rent_price, :rent_days
 
-validate :valid_category_code, :valid_rent_price, :valid_rent_days
+validate :valid_category_code, :valid_rent_price :valid_rent_days
 
 
 protected

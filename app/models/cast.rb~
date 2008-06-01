@@ -8,7 +8,7 @@ validate :valid_movie_code
 
 protected
 def valid_movie_code
-    errors.add(:movie_code, ' has to be numerical and greater than zero' ) if movie_code.nil? ||
+    errors.add(:movie_code, 'The movie code has to be numerical and greater than zero' ) if movie_code.nil? ||
     movie_code < 0
 end
 

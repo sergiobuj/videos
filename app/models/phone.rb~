@@ -6,7 +6,7 @@ validate :valid_code_person
 
 protected
 def valid_code_person
-    errors.add(:code_person, ' (Employee or Client) has to be numerical and greater than zero' ) if code_person.nil? ||
+    errors.add(:code_person, 'The person (Employee or Client) code has to be numerical and greater than zero' ) if code_person.nil? ||
     code_person < 0
 end
 

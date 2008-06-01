@@ -52,3 +52,782 @@ Migrating to CreateCasts (9)
   [4;35;1mSQL (0.000089)[0m   [0mPRAGMA index_list(phones)[0m
   [4;36;1mSQL (0.000095)[0m   [0;1mPRAGMA index_list(rents)[0m
   [4;35;1mSQL (0.000090)[0m   [0mPRAGMA index_list(returns)[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-01 16:19:22) [GET]
+  Session ID: 2dfea8f02f0eb2b80b0f5ca40f56bac1
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.001141)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.01505 (66 reqs/sec) | Rendering: 0.00522 (34%) | DB: 0.00114 (7%) | 200 OK [http://localhost/movies]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2008-06-01 16:19:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--d394d2bb7c13e7feefb7ca9aead3ccfa8ff9380f
+  Parameters: {"action"=>"index", "controller"=>"clients"}
+  [4;35;1mClient Load (0.000858)[0m   [0mSELECT * FROM clients [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 0.01438 (69 reqs/sec) | Rendering: 0.00493 (34%) | DB: 0.00086 (5%) | 200 OK [http://localhost/clients]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-06-01 16:19:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--d394d2bb7c13e7feefb7ca9aead3ccfa8ff9380f
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/rent" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-01 16:19:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--d394d2bb7c13e7feefb7ca9aead3ccfa8ff9380f
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;36;1mRent Load (0.000854)[0m   [0;1mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01432 (69 reqs/sec) | Rendering: 0.00452 (31%) | DB: 0.00085 (5%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-01 16:19:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--d394d2bb7c13e7feefb7ca9aead3ccfa8ff9380f
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+Rendering template within layouts/rents
+Rendering rents/new
+Completed in 0.01909 (52 reqs/sec) | Rendering: 0.00854 (44%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rents/new]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-01 16:20:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;35;1mRent Load (0.000813)[0m   [0mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01038 (96 reqs/sec) | Rendering: 0.00148 (14%) | DB: 0.00081 (7%) | 200 OK [http://localhost/rents]
+
+
+Processing EmployeesController#index (for 127.0.0.1 at 2008-06-01 16:20:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"employees"}
+  [4;36;1mEmployee Load (0.000842)[0m   [0;1mSELECT * FROM employees [0m
+Rendering template within layouts/employees
+Rendering employees/index
+Completed in 0.01458 (68 reqs/sec) | Rendering: 0.00499 (34%) | DB: 0.00084 (5%) | 200 OK [http://localhost/employees]
+
+
+Processing EmployeesController#new (for 127.0.0.1 at 2008-06-01 16:20:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"employees"}
+Rendering template within layouts/employees
+Rendering employees/new
+Completed in 0.01894 (52 reqs/sec) | Rendering: 0.00816 (43%) | DB: 0.00000 (0%) | 200 OK [http://localhost/employees/new]
+
+
+Processing EmployeesController#index (for 127.0.0.1 at 2008-06-01 16:20:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"employees"}
+  [4;35;1mEmployee Load (0.000818)[0m   [0mSELECT * FROM employees [0m
+Rendering template within layouts/employees
+Rendering employees/index
+Completed in 0.01034 (96 reqs/sec) | Rendering: 0.00149 (14%) | DB: 0.00082 (7%) | 200 OK [http://localhost/employees]
+
+
+Processing AvailablesController#index (for 127.0.0.1 at 2008-06-01 16:20:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"availables"}
+  [4;36;1mAvailable Load (0.000859)[0m   [0;1mSELECT * FROM availables [0m
+Rendering template within layouts/availables
+Rendering availables/index
+Completed in 0.07289 (13 reqs/sec) | Rendering: 0.00421 (5%) | DB: 0.00086 (1%) | 200 OK [http://localhost/availables]
+
+
+Processing AvailablesController#new (for 127.0.0.1 at 2008-06-01 16:20:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"availables"}
+Rendering template within layouts/availables
+Rendering availables/new
+Completed in 0.01534 (65 reqs/sec) | Rendering: 0.00518 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/availables/new]
+
+
+Processing AvailablesController#index (for 127.0.0.1 at 2008-06-01 16:20:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"availables"}
+  [4;35;1mAvailable Load (0.001059)[0m   [0mSELECT * FROM availables [0m
+Rendering template within layouts/availables
+Rendering availables/index
+Completed in 0.01590 (62 reqs/sec) | Rendering: 0.00159 (10%) | DB: 0.00106 (6%) | 200 OK [http://localhost/availables]
+
+
+Processing CastsController#index (for 127.0.0.1 at 2008-06-01 16:21:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"casts"}
+  [4;36;1mCast Load (0.000805)[0m   [0;1mSELECT * FROM casts [0m
+Rendering template within layouts/casts
+Rendering casts/index
+Completed in 0.01382 (72 reqs/sec) | Rendering: 0.00426 (30%) | DB: 0.00081 (5%) | 200 OK [http://localhost/casts]
+
+
+Processing CastsController#new (for 127.0.0.1 at 2008-06-01 16:21:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"casts"}
+Rendering template within layouts/casts
+Rendering casts/new
+Completed in 0.01575 (63 reqs/sec) | Rendering: 0.00525 (33%) | DB: 0.00000 (0%) | 200 OK [http://localhost/casts/new]
+
+
+Processing CastsController#index (for 127.0.0.1 at 2008-06-01 16:21:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"casts"}
+  [4;35;1mCast Load (0.000827)[0m   [0mSELECT * FROM casts [0m
+Rendering template within layouts/casts
+Rendering casts/index
+Completed in 0.01092 (91 reqs/sec) | Rendering: 0.00154 (14%) | DB: 0.00083 (7%) | 200 OK [http://localhost/casts]
+
+
+Processing CastsController#new (for 127.0.0.1 at 2008-06-01 17:39:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"casts"}
+Rendering template within layouts/casts
+Rendering casts/new
+Completed in 0.01383 (72 reqs/sec) | Rendering: 0.00381 (27%) | DB: 0.00000 (0%) | 200 OK [http://localhost/casts/new]
+
+
+Processing CastsController#create (for 127.0.0.1 at 2008-06-01 17:39:28) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "controller"=>"casts", "cast"=>{"movie_code"=>"1234", "actor_actress_name"=>"jey li"}}
+  [4;36;1mCast Create (0.000538)[0m   [0;1mINSERT INTO casts ("updated_at", "movie_code", "actor_actress_name", "created_at") VALUES('2008-06-01 17:39:28', 1234, 'jey li', '2008-06-01 17:39:28')[0m
+Redirected to http://localhost:3000/casts/1
+Completed in 0.02180 (45 reqs/sec) | DB: 0.00054 (2%) | 302 Found [http://localhost/casts]
+
+
+Processing CastsController#show (for 127.0.0.1 at 2008-06-01 17:39:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIiNDYXN0IHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G%0AOgpAdXNlZHsGOwdU--2070c4a4f64e60b431cc9074b0207d387f7d1457
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"casts"}
+  [4;35;1mCast Load (0.000364)[0m   [0mSELECT * FROM casts WHERE (casts."id" = 1) [0m
+Rendering template within layouts/casts
+Rendering casts/show
+Completed in 0.01489 (67 reqs/sec) | Rendering: 0.00358 (24%) | DB: 0.00036 (2%) | 200 OK [http://localhost/casts/1]
+
+
+Processing CastsController#index (for 127.0.0.1 at 2008-06-01 17:39:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"casts"}
+  [4;36;1mCast Load (0.001012)[0m   [0;1mSELECT * FROM casts [0m
+Rendering template within layouts/casts
+Rendering casts/index
+Completed in 0.01395 (71 reqs/sec) | Rendering: 0.00434 (31%) | DB: 0.00101 (7%) | 200 OK [http://localhost/casts]
+
+
+Processing CastsController#new (for 127.0.0.1 at 2008-06-01 17:39:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"casts"}
+Rendering template within layouts/casts
+Rendering casts/new
+Completed in 0.01361 (73 reqs/sec) | Rendering: 0.00375 (27%) | DB: 0.00000 (0%) | 200 OK [http://localhost/casts/new]
+
+
+Processing CastsController#create (for 127.0.0.1 at 2008-06-01 17:39:44) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "controller"=>"casts", "cast"=>{"movie_code"=>"-123", "actor_actress_name"=>""}}
+Rendering template within layouts/casts
+Rendering casts/new
+Completed in 0.07900 (12 reqs/sec) | Rendering: 0.00319 (4%) | DB: 0.00000 (0%) | 200 OK [http://localhost/casts]
+
+
+Processing CastsController#index (for 127.0.0.1 at 2008-06-01 17:40:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"casts"}
+  [4;35;1mCast Load (0.001029)[0m   [0mSELECT * FROM casts [0m
+Rendering template within layouts/casts
+Rendering casts/index
+Completed in 0.01430 (69 reqs/sec) | Rendering: 0.00432 (30%) | DB: 0.00103 (7%) | 200 OK [http://localhost/casts]
+
+
+Processing CastsController#destroy (for 127.0.0.1 at 2008-06-01 17:40:17) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "_method"=>"delete", "action"=>"destroy", "id"=>"1", "controller"=>"casts"}
+  [4;36;1mCast Load (0.000467)[0m   [0;1mSELECT * FROM casts WHERE (casts."id" = 1) [0m
+  [4;35;1mCast Destroy (0.000341)[0m   [0m DELETE FROM casts
+ WHERE "id" = 1
+[0m
+Redirected to http://localhost:3000/casts
+Completed in 0.01773 (56 reqs/sec) | DB: 0.00081 (4%) | 302 Found [http://localhost/casts/1]
+
+
+Processing CastsController#index (for 127.0.0.1 at 2008-06-01 17:40:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"casts"}
+  [4;36;1mCast Load (0.000814)[0m   [0;1mSELECT * FROM casts [0m
+Rendering template within layouts/casts
+Rendering casts/index
+Completed in 0.01085 (92 reqs/sec) | Rendering: 0.00149 (13%) | DB: 0.00081 (7%) | 200 OK [http://localhost/casts]
+
+
+Processing CastsController#new (for 127.0.0.1 at 2008-06-01 17:42:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"casts"}
+Rendering template within layouts/casts
+Rendering casts/new
+Completed in 0.01451 (68 reqs/sec) | Rendering: 0.00392 (27%) | DB: 0.00000 (0%) | 200 OK [http://localhost/casts/new]
+
+
+Processing CastsController#create (for 127.0.0.1 at 2008-06-01 17:42:26) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "controller"=>"casts", "cast"=>{"movie_code"=>"", "actor_actress_name"=>""}}
+Rendering template within layouts/casts
+Rendering casts/new
+Completed in 0.01526 (65 reqs/sec) | Rendering: 0.00307 (20%) | DB: 0.00000 (0%) | 200 OK [http://localhost/casts]
+
+
+Processing CastsController#index (for 127.0.0.1 at 2008-06-01 17:42:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"casts"}
+  [4;35;1mCast Load (0.001294)[0m   [0mSELECT * FROM casts [0m
+Rendering template within layouts/casts
+Rendering casts/index
+Completed in 0.01656 (60 reqs/sec) | Rendering: 0.00150 (9%) | DB: 0.00129 (7%) | 200 OK [http://localhost/casts]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-01 17:42:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.000867)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.01280 (78 reqs/sec) | Rendering: 0.00156 (12%) | DB: 0.00087 (6%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-01 17:42:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.02277 (43 reqs/sec) | Rendering: 0.00920 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-01 17:43:31) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "movie"=>{"movie_year"=>"87", "movie_title"=>"the movie", "movie_original_title"=>"la pelicula", "category_code"=>"", "country"=>"colombia", "movie_director"=>"tipo uno", "movie_code"=>"-1", "genre"=>"comedia", "place_in_store"=>"al frente"}, "controller"=>"movies"}
+
+
+NoMethodError (undefined method `valid_year_code' for #<Movie:0xb593a958>):
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/validations.rb:1000:in `send'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/validations.rb:1000:in `run_validations'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/validations.rb:998:in `each'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/validations.rb:998:in `run_validations'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/validations.rb:962:in `valid_without_callbacks?'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/callbacks.rb:273:in `valid?'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/validations.rb:933:in `save_without_transactions'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:108:in `save'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:80:in `transaction'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:100:in `transaction'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:108:in `save'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:120:in `rollback_active_record_state!'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/transactions.rb:108:in `save'
+    /app/controllers/movies_controller.rb:46:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:106:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:106:in `respond_to'
+    /app/controllers/movies_controller.rb:45:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-01 17:44:56) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "movie"=>{"movie_year"=>"87", "movie_title"=>"the movie", "movie_original_title"=>"la pelicula", "category_code"=>"", "country"=>"colombia", "movie_director"=>"tipo uno", "movie_code"=>"-1", "genre"=>"comedia", "place_in_store"=>"al frente"}, "controller"=>"movies"}
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.01878 (53 reqs/sec) | Rendering: 0.00412 (21%) | DB: 0.00000 (0%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-01 17:45:55) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "movie"=>{"movie_year"=>"1887", "movie_title"=>"the movie", "movie_original_title"=>"la pelicula", "category_code"=>"123", "country"=>"colombia", "movie_director"=>"tipo uno", "movie_code"=>"234", "genre"=>"comedia", "place_in_store"=>"al frente"}, "controller"=>"movies"}
+  [4;35;1mMovie Create (0.000335)[0m   [0mINSERT INTO movies ("movie_year", "updated_at", "movie_title", "category_code", "movie_original_title", "country", "movie_director", "movie_code", "genre", "place_in_store", "created_at") VALUES(1887, '2008-06-01 17:45:55', 'the movie', 123, 'la pelicula', 'colombia', 'tipo uno', 234, 'comedia', 'al frente', '2008-06-01 17:45:55')[0m
+Redirected to http://localhost:3000/movies/1
+Completed in 0.11689 (8 reqs/sec) | DB: 0.00033 (0%) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2008-06-01 17:45:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIiRNb3ZpZSB3YXMgc3VjY2Vzc2Z1bGx5IGNyZWF0ZWQu%0ABjoKQHVzZWR7BjsHVA%3D%3D--f7e91aab1170c9434c6db3dbbbcde31b4f14fe4d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.000555)[0m   [0;1mSELECT * FROM movies WHERE (movies."id" = 1) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 0.01999 (50 reqs/sec) | Rendering: 0.00604 (30%) | DB: 0.00056 (2%) | 200 OK [http://localhost/movies/1]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-01 17:46:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.001164)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.01630 (61 reqs/sec) | Rendering: 0.00671 (41%) | DB: 0.00116 (7%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2008-06-01 17:46:21) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "_method"=>"delete", "action"=>"destroy", "id"=>"1", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.000549)[0m   [0;1mSELECT * FROM movies WHERE (movies."id" = 1) [0m
+  [4;35;1mMovie Destroy (0.000240)[0m   [0m DELETE FROM movies
+ WHERE "id" = 1
+[0m
+Redirected to http://localhost:3000/movies
+Completed in 0.01855 (53 reqs/sec) | DB: 0.00079 (4%) | 302 Found [http://localhost/movies/1]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-01 17:46:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.000894)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.01125 (88 reqs/sec) | Rendering: 0.00153 (13%) | DB: 0.00089 (7%) | 200 OK [http://localhost/movies]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-01 17:53:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;35;1mRent Load (0.000903)[0m   [0mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01351 (73 reqs/sec) | Rendering: 0.00166 (12%) | DB: 0.00090 (6%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-01 17:53:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+Rendering template within layouts/rents
+Rendering rents/new
+Completed in 0.01675 (59 reqs/sec) | Rendering: 0.00576 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rents/new]
+
+
+Processing RentsController#create (for 127.0.0.1 at 2008-06-01 17:54:12) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "controller"=>"rents", "rent"=>{"rent_code"=>"1234", "exp_date(1i)"=>"2008", "exp_date(2i)"=>"6", "client_code"=>"4356", "exp_date(3i)"=>"1", "movie_code"=>"2345", "rent_date(1i)"=>"2008", "emp_code"=>"5687", "rent_date(2i)"=>"6", "rent_date(3i)"=>"1"}}
+  [4;36;1mRent Create (0.000323)[0m   [0;1mINSERT INTO rents ("rent_code", "updated_at", "rent_date", "client_code", "movie_code", "emp_code", "exp_date", "created_at") VALUES(1234, '2008-06-01 17:54:12', '2008-06-01', 4356, 2345, 5687, '2008-06-01', '2008-06-01 17:54:12')[0m
+Redirected to http://localhost:3000/rents/1
+Completed in 0.47165 (2 reqs/sec) | DB: 0.00032 (0%) | 302 Found [http://localhost/rents]
+
+
+Processing RentsController#show (for 127.0.0.1 at 2008-06-01 17:54:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIiNSZW50IHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4G%0AOgpAdXNlZHsGOwdU--0f3af3dce4cb4423e8b9d1c5a2aab75b60123a11
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"rents"}
+  [4;35;1mRent Load (0.000433)[0m   [0mSELECT * FROM rents WHERE (rents."id" = 1) [0m
+Rendering template within layouts/rents
+Rendering rents/show
+Completed in 0.01752 (57 reqs/sec) | Rendering: 0.00568 (32%) | DB: 0.00043 (2%) | 200 OK [http://localhost/rents/1]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-01 17:54:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;36;1mRent Load (0.001089)[0m   [0;1mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01610 (62 reqs/sec) | Rendering: 0.00642 (39%) | DB: 0.00109 (6%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#show (for 127.0.0.1 at 2008-06-01 17:54:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"rents"}
+  [4;35;1mRent Load (0.000462)[0m   [0mSELECT * FROM rents WHERE (rents."id" = 1) [0m
+Rendering template within layouts/rents
+Rendering rents/show
+Completed in 0.02036 (49 reqs/sec) | Rendering: 0.00405 (19%) | DB: 0.00046 (2%) | 200 OK [http://localhost/rents/1]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-01 17:54:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;36;1mRent Load (0.001107)[0m   [0;1mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01651 (60 reqs/sec) | Rendering: 0.00651 (39%) | DB: 0.00111 (6%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#destroy (for 127.0.0.1 at 2008-06-01 17:55:00) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "_method"=>"delete", "action"=>"destroy", "id"=>"1", "controller"=>"rents"}
+  [4;35;1mRent Load (0.000441)[0m   [0mSELECT * FROM rents WHERE (rents."id" = 1) [0m
+  [4;36;1mRent Destroy (0.000268)[0m   [0;1m DELETE FROM rents
+ WHERE "id" = 1
+[0m
+Redirected to http://localhost:3000/rents
+Completed in 0.02232 (44 reqs/sec) | DB: 0.00071 (3%) | 302 Found [http://localhost/rents/1]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-01 17:55:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;35;1mRent Load (0.000856)[0m   [0mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01083 (92 reqs/sec) | Rendering: 0.00152 (14%) | DB: 0.00086 (7%) | 200 OK [http://localhost/rents]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-01 17:55:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+
+
+SyntaxError (/home/sergio/Desktop/bd/videos/app/models/category.rb:5: syntax error, unexpected ':', expecting kEND
+validate :valid_category_code, :valid_rent_price :valid_rent_days
+                                                  ^):
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_file'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:202:in `load_file'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:248:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:453:in `const_missing'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:465:in `const_missing'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:469:in `const_missing'
+    /app/controllers/categories_controller.rb:5:in `index'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-06-01 17:55:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/categorie" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-06-01 17:55:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/category" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-01 17:55:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+
+
+SyntaxError (/home/sergio/Desktop/bd/videos/app/models/category.rb:5: syntax error, unexpected ':', expecting kEND
+validate :valid_category_code, :valid_rent_price :valid_rent_days
+                                                  ^):
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:203:in `load_file'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:202:in `load_file'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:248:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:453:in `const_missing'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:465:in `const_missing'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:469:in `const_missing'
+    /app/controllers/categories_controller.rb:5:in `index'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-01 17:56:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mCategory Load (0.000886)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.01917 (52 reqs/sec) | Rendering: 0.00444 (23%) | DB: 0.00089 (4%) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2008-06-01 17:56:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"categories"}
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 0.01568 (63 reqs/sec) | Rendering: 0.00551 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/categories/new]
+
+
+Processing CategoriesController#create (for 127.0.0.1 at 2008-06-01 17:56:16) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "category"=>{"rent_days"=>"65", "category_code"=>"1234", "rent_price"=>"345"}, "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "controller"=>"categories"}
+  [4;35;1mCategory Create (0.000323)[0m   [0mINSERT INTO categories ("rent_days", "updated_at", "category_code", "rent_price", "created_at") VALUES(65, '2008-06-01 17:56:16', 1234, 345, '2008-06-01 17:56:16')[0m
+Redirected to http://localhost:3000/categories/1
+Completed in 0.12503 (7 reqs/sec) | DB: 0.00032 (0%) | 302 Found [http://localhost/categories]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2008-06-01 17:56:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIidDYXRlZ29yeSB3YXMgc3VjY2Vzc2Z1bGx5IGNyZWF0%0AZWQuBjoKQHVzZWR7BjsHVA%3D%3D--3c31e7e47a0c8803722ce170057514cddafb28de
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"categories"}
+  [4;36;1mCategory Load (0.000367)[0m   [0;1mSELECT * FROM categories WHERE (categories."id" = 1) [0m
+Rendering template within layouts/categories
+Rendering categories/show
+Completed in 0.01543 (64 reqs/sec) | Rendering: 0.00398 (25%) | DB: 0.00037 (2%) | 200 OK [http://localhost/categories/1]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-01 17:56:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mCategory Load (0.001041)[0m   [0mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.01473 (67 reqs/sec) | Rendering: 0.00489 (33%) | DB: 0.00104 (7%) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2008-06-01 17:56:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"new", "controller"=>"categories"}
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 0.01435 (69 reqs/sec) | Rendering: 0.00409 (28%) | DB: 0.00000 (0%) | 200 OK [http://localhost/categories/new]
+
+
+Processing CategoriesController#create (for 127.0.0.1 at 2008-06-01 17:56:33) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"commit"=>"Create", "category"=>{"rent_days"=>"678", "category_code"=>"123455", "rent_price"=>"34567"}, "authenticity_token"=>"25d29a409842d4a46de056fcd36f47a39d430c95", "action"=>"create", "controller"=>"categories"}
+  [4;36;1mCategory Create (0.000337)[0m   [0;1mINSERT INTO categories ("rent_days", "updated_at", "category_code", "rent_price", "created_at") VALUES(678, '2008-06-01 17:56:33', 123455, 34567, '2008-06-01 17:56:33')[0m
+Redirected to http://localhost:3000/categories/2
+Completed in 0.01852 (53 reqs/sec) | DB: 0.00034 (1%) | 302 Found [http://localhost/categories]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2008-06-01 17:56:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7BjoLbm90aWNlIidDYXRlZ29yeSB3YXMgc3VjY2Vzc2Z1bGx5IGNyZWF0%0AZWQuBjoKQHVzZWR7BjsHVA%3D%3D--3c31e7e47a0c8803722ce170057514cddafb28de
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"categories"}
+  [4;35;1mCategory Load (0.000399)[0m   [0mSELECT * FROM categories WHERE (categories."id" = 2) [0m
+Rendering template within layouts/categories
+Rendering categories/show
+Completed in 0.01839 (54 reqs/sec) | Rendering: 0.00280 (15%) | DB: 0.00040 (2%) | 200 OK [http://localhost/categories/2]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-01 17:56:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNDJhYmEwMjY5MTA0OTY0MmNlMzdkZTA0ODlkNGMy%0AOTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--9567dd9f077f57c173f99599534f5fb1ba3235cd
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mCategory Load (0.001150)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.01480 (67 reqs/sec) | Rendering: 0.00503 (33%) | DB: 0.00115 (7%) | 200 OK [http://localhost/categories]

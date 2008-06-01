@@ -20,7 +20,7 @@ end
 
 protected
 def valid_emp_code
-    errors.add(:emp_code, ' has to be numerical and greater than zero' ) if emp_code.nil? ||
+    errors.add(:emp_code, ' code has to be numerical and greater than zero' ) if emp_code.nil? ||
     emp_code < 0
 end
 

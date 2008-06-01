@@ -7,13 +7,13 @@ validates_numericality_of :client_code, :client_id
 validate :valid_client_code, :valid_client_id
 protected
 def valid_client_code
-    errors.add(:client_code, ' has to be numerical and greater than zero' ) if client_code.nil? ||
+    errors.add(:client_code, 'The client code has to be numerical and greater than zero' ) if client_code.nil? ||
     client_code < 0
 end
 
 protected
 def valid_client_id
-    errors.add(:client_code, ' has to be numerical and greater than zero' ) if client_id.nil? ||
+    errors.add(:client_code, 'The client`s ID has to be numerical and greater than zero' ) if client_id.nil? ||
     client_id < 0
 end
 
