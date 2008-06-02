@@ -3,7 +3,9 @@ validates_presence_of :rent_code, :movie_code, :client_code, :emp_code, :rent_da
 validates_numericality_of :rent_code, :movie_code, :client_code, :emp_code
 
 validate :valid_rent_code, :valid_movie_code, :valid_client_code, :valid_emp_code
-
+validates_uniqueness_of :rent_code,
+belongs_to :client #, :dependent =>false
+has_one :return
 
 
 protected
@@ -20,7 +22,7 @@ end
 
 protected
 def valid_emp_code
-    errors.add(:emp_code, ' code has to be numerical and greater than zero' ) if emp_code.nil? ||
+    errors.add(:emp_code, ' has to be numerical and greater than zero' ) if emp_code.nil? ||
     emp_code < 0
 end
 

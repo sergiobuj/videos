@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Category Name</th>
     <th>Category code</th>
     <th>Rent price</th>
     <th>Rent days</th>
@@ -9,9 +10,10 @@
 
 <% for category in @categories %>
   <tr>
+    <td><%=h category.category_name %></td>
     <td><%=h category.category_code %></td>
-    <td><%=h category.rent_price %></td>
-    <td><%=h category.rent_days %></td>
+    <td><%= number_to_currency(category.rent_price) %></td>
+    <td><%=h category.rent_days %></td> <td>
     <td><%= link_to 'Show', category %></td>
     <td><%= link_to 'Edit', edit_category_path(category) %></td>
     <td><%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>

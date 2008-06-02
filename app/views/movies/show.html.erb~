@@ -1,0 +1,49 @@
+<p>
+  <b>Movie code:</b>
+  <%=h @movie.movie_code %>
+</p>
+
+<p>
+  <b>Movie title:</b>
+  <%=h @movie.movie_title %>
+</p>
+
+<p>
+  <b>Movie original title:</b>
+  <%=h @movie.movie_original_title %>
+</p>
+
+<p>
+  <b>Movie year:</b>
+  <%=h @movie.movie_year %>
+</p>
+
+<p>
+  <b>Movie director:</b>
+  <%=h @movie.movie_director %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%=h @movie.genre %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%=h @movie.country %>
+</p>
+
+<p>
+  <b>Place in store:</b>
+  <%=h @movie.place_in_store %>
+</p>
+
+<p>
+  <b>Category code:</b>
+  <%=h @movie.category_code %>
+</p>
+
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %> |
+<%= link_to 'Next', new_cast_path(@movie) %>

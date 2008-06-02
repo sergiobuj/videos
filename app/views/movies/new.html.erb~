@@ -1,0 +1,67 @@
+<h1>New movie</h1>
+
+<%= error_messages_for :movie %>
+
+<% form_for(@movie) do |f| %>
+  <p>
+    <b>Movie code</b><br />
+    <%= f.text_field :movie_code%>
+  </p>
+
+  <p>
+    <b>Movie title</b><br />
+    <%= f.text_field :movie_title %>
+  </p>
+
+  <p>
+    <b>Movie original title</b><br />
+    <%= f.text_field :movie_original_title %>
+  </p>
+
+  <p>
+    <b>Movie year</b><br />
+    <%= f.text_field :movie_year %>
+  </p>
+
+  <p>
+    <b>Movie director</b><br />
+    <%= f.text_field :movie_director %>
+  </p>
+
+  <p>
+    <b>Genre</b><br />
+    <%= f.text_field :genre %>
+  </p>
+
+  <p>
+    <b>Country</b><br />
+    <%= f.text_field :country %>
+  </p>
+
+  <p>
+    <b>Place in store</b><br />
+    <%= f.text_field :place_in_store %>
+  </p>
+
+  <p>
+    <b>Category</b><br />
+    <%=
+        f.text_field :category_code
+    %>
+
+  </p>
+  
+    <% for cast in @movie.cast %>
+    <% fields_for "movie[cast_attributes][]", (@cast) do |cast_form| %>
+	Movie code: <%= f.text_field :movie_code %>
+	Actor actress name: <%= f.text_field :actor_actress_name %>
+   	 <%= f.submit "Create" %>
+    <% end %>
+
+  <p>
+    <%= f.submit "Create" %>
+    
+  </p>
+<% end %>
+
+<%= link_to 'Back', movies_path %>

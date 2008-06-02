@@ -1,0 +1,46 @@
+<h1>New employee</h1>
+
+<%= error_messages_for :employee %>
+
+<% form_for(@employee) do |f| %>
+  <p>
+    <b>Emp code</b><br />
+    <%= f.text_field :emp_code %>
+  </p>
+
+  <p>
+    <b>Emp</b><br />
+    <%= f.text_field :emp_id %>
+  </p>
+
+  <p>
+    <b>Emp name</b><br />
+    <%= f.text_field :emp_name %>
+  </p>
+
+  <p>
+    <b>Emp surname</b><br />
+    <%= f.text_field :emp_surname %>
+  </p>
+
+  <p>
+    <b>Emp state</b><br />
+    <%= f.text_field :emp_state %>
+  </p>
+
+  <p>
+    <b>Start date</b><br />
+    <%= f.date_select :start_date %>
+  </p>
+
+  <p>
+    <b>Home address</b><br />
+    <%= f.text_field :home_address %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', employees_path %>

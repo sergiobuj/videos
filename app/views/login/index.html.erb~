@@ -1,0 +1,7 @@
+<h1>Login#index</h1>
+<h1>Welcome </h1>
+<%= pluralize(@total_orders, "Rent" ) @user%>
+<p>
+  <%= link_to "Logout" , :controller => 'login', :action => 'logout' %> | <%= link_to "Add User" , :controller => 'login', :action => 'add_user' %>
+</p>
+

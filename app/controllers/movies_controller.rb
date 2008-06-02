@@ -1,9 +1,9 @@
 class MoviesController < ApplicationController
+  
   # GET /movies
   # GET /movies.xml
   def index
     @movies = Movie.find(:all)
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @movies }
@@ -25,7 +25,7 @@ class MoviesController < ApplicationController
   # GET /movies/new.xml
   def new
     @movie = Movie.new
-
+    3.times{@movie.cast.build}
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @movie }
@@ -41,10 +41,11 @@ class MoviesController < ApplicationController
   # POST /movies.xml
   def create
     @movie = Movie.new(params[:movie])
-
+    @category_name = Category.find(:all)
+    @category_code = Category.find(:all)
     respond_to do |format|
       if @movie.save
-        flash[:notice] = 'Movie was successfully created.'
+        flash[:notice] = 'Movie successfully created.'
         format.html { redirect_to(@movie) }
         format.xml  { render :xml => @movie, :status => :created, :location => @movie }
       else
@@ -58,7 +59,6 @@ class MoviesController < ApplicationController
   # PUT /movies/1.xml
   def update
     @movie = Movie.find(params[:id])
-
     respond_to do |format|
       if @movie.update_attributes(params[:movie])
         flash[:notice] = 'Movie was successfully updated.'

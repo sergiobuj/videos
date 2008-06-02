@@ -1,8 +1,22 @@
 class Movie < ActiveRecord::Base
 validates_presence_of :movie_code, :movie_title, :movie_original_title, :movie_year, :movie_director, :genre, :country, :place_in_store, :category_code
 validates_numericality_of :movie_code, :movie_year, :category_code
-validate :valid_year, :valid_movie_code, :valid_category_code 
+validate :valid_year, :valid_movie_code
+validates_uniqueness_of :movie_code
+has_many :cast# , :dependent=>:nil
+belongs_to :category# , :dependent=>:nil
 
+
+#CATEGORIES=[[  ]]
+
+#validates_inclusion_of :category_code, :in =>
+#  CATEGORIES.map {|one, two| two} f.select :category_code, @category_code.category_code
+
+def cast_attributes=(cast_attributes)
+  cast_attributes.each do |attributes|
+    cast.build(attributes)
+  end
+end
 
 protected
 def valid_movie_code
@@ -10,11 +24,6 @@ def valid_movie_code
     movie_code < 0
 end
 
-protected
-def valid_category_code
-    errors.add(:category_code, ' has to be numerical and greater than zero' ) if category_code.nil? ||
-    category_code < 0
-end
 
 
 

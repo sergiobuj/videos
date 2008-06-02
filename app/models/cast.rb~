@@ -3,12 +3,15 @@ validates_presence_of :movie_code,:actor_actress_name
 validates_numericality_of :movie_code
 
 validate :valid_movie_code
+validates_uniqueness_of :movie_code
+
+belongs_to :movie, :dependent => :destroy
 
 
 
 protected
 def valid_movie_code
-    errors.add(:movie_code, 'The movie code has to be numerical and greater than zero' ) if movie_code.nil? ||
+    errors.add(:movie_code, ' has to be numerical and greater than zero' ) if movie_code.nil? ||
     movie_code < 0
 end
 

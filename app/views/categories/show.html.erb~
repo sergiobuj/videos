@@ -1,0 +1,18 @@
+<p>
+  <b>Category code:</b>
+  <%=h @category.category_code %>
+</p>
+
+<p>
+  <b>Rent price:</b>
+  <%=h @category.rent_price %>
+</p>
+
+<p>
+  <b>Rent days:</b>
+  <%=h @category.rent_days %>
+</p>
+
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

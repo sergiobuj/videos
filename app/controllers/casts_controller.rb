@@ -25,7 +25,6 @@ class CastsController < ApplicationController
   # GET /casts/new.xml
   def new
     @cast = Cast.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @cast }
@@ -53,6 +52,7 @@ class CastsController < ApplicationController
       end
     end
   end
+
 
   # PUT /casts/1
   # PUT /casts/1.xml

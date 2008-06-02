@@ -2,7 +2,8 @@ class Employee < ActiveRecord::Base
 validates_presence_of :emp_code, :emp_id, :emp_name, :emp_surname, :start_date, :emp_state, :home_address
 validates_numericality_of :emp_code, :emp_id
 validate :valid_emp_code, :valid_emp_id
-
+validates_uniqueness_of :emp_code, :emp_id
+has_many :phone#, :dependent=>false
 
 
 protected

@@ -5,7 +5,7 @@
 <% form_for(@movie) do |f| %>
   <p>
     <b>Movie code</b><br />
-    <%= f.text_field :movie_code %>
+    <%= f.text_field :movie_code%>
   </p>
 
   <p>
@@ -44,12 +44,23 @@
   </p>
 
   <p>
-    <b>Category code</b><br />
-    <%= f.text_field :category_code %>
-  </p>
+    <b>Category</b><br />
+    <%=
+        f.text_field :category_code
+    %>
 
+  </p>
+  
+    <% for cast in @movie.cast %>
+    <% fields_for "movie[cast_attributes][]", (@cast) do |cast_form| %>
+	Movie code: <%= f.text_field :movie_code %>
+	Actor actress name: <%= f.text_field :actor_actress_name %>
+   	 <%= f.submit "Create" %>
+	<% end %>
+    <% end %>
   <p>
     <%= f.submit "Create" %>
+    
   </p>
 <% end %>
 

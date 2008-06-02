@@ -1,8 +1,10 @@
 class Client < ActiveRecord::Base
 validates_presence_of :client_code, :client_id, :client_name, :client_surname, :sing_up_date, :birth_date, :client_state, :home_address
 validates_numericality_of :client_code, :client_id
+validates_uniqueness_of :client_code, :client_id
 
-
+has_many :rent#,:dependent=>false
+has_many :phone#,:dependent=>false
 
 validate :valid_client_code, :valid_client_id
 protected

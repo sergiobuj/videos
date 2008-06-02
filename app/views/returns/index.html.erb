@@ -7,14 +7,14 @@
     <th>Charges</th>
   </tr>
 
-<% for return in @returns %>
+<% for r_eturn in @returns %>
   <tr>
-    <td><%=h return.rent_code %></td>
-    <td><%=h return.return_date %></td>
-    <td><%=h return.charges %></td>
-    <td><%= link_to 'Show', return %></td>
-    <td><%= link_to 'Edit', edit_return_path(return) %></td>
-    <td><%= link_to 'Destroy', return, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h r_eturn.rent_code %></td>
+    <td><%=h r_eturn.return_date %></td>
+    <td><%=h r_eturn.charges %></td>
+    <td><%= link_to 'Show', r_eturn %></td>
+    <td><%= link_to 'Edit', edit_return_path(r_eturn) %></td>
+    <td><%= link_to 'Destroy', r_eturn, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

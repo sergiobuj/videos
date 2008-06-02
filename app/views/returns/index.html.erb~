@@ -1,0 +1,24 @@
+<h1>Listing returns</h1>
+
+<table>
+  <tr>
+    <th>Rent code</th>
+    <th>Return date</th>
+    <th>Charges</th>
+  </tr>
+
+<% for return in @returns %>
+  <tr>
+    <td><%=h return.rent_code %></td>
+    <td><%=h return.return_date %></td>
+    <td><%=h return.charges %></td>
+    <td><%= link_to 'Show', return %></td>
+    <td><%= link_to 'Edit', edit_return_path(return) %></td>
+    <td><%= link_to 'Destroy', return, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New return', new_return_path %>

@@ -1,0 +1,27 @@
+<h1>Editing category</h1>
+
+<%= error_messages_for :category %>
+
+<% form_for(@category) do |f| %>
+  <p>
+    <b>Category code</b><br />
+    <%= f.text_field :category_code %>
+  </p>
+
+  <p>
+    <b>Rent price</b><br />
+    <%= f.text_field :rent_price %>
+  </p>
+
+  <p>
+    <b>Rent days</b><br />
+    <%= f.text_field :rent_days %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @category %> |
+<%= link_to 'Back', categories_path %>

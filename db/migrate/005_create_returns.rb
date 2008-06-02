@@ -6,10 +6,12 @@ class CreateReturns < ActiveRecord::Migration
       t.integer :charges
 
       t.timestamps
+      rename_table :return, :r_eturn
     end
   end
 
   def self.down
+  rename_table :r_eturn, :return
     drop_table :returns
   end
 end

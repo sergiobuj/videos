@@ -2,6 +2,7 @@ class Phone < ActiveRecord::Base
 validates_presence_of :code_person, :phone_number
 validates_numericality_of :code_person
 validate :valid_code_person
+has_many :client || :employee , :dependent=>:destroy
 
 
 protected
