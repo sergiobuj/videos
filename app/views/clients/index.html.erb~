@@ -31,4 +31,4 @@
 
 <br />
 
-|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> | <%= link_to 'New client', new_client_path %> |
+<%= link_to 'New client', new_client_path %>

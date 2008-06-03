@@ -45,6 +45,16 @@
 
   <p>
     <b>Category code</b><br />
+    
+    <select>
+   <% @categories.each do |category| %>
+       <option <%= category.category_code %> 
+      
+       </option>
+   <% end %>
+  </select>
+    
+    
     <%= f.text_field :category_code %>
   </p>
 

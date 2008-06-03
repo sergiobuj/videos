@@ -14,7 +14,6 @@ class CastsController < ApplicationController
   # GET /casts/1.xml
   def show
     @cast = Cast.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @cast }
@@ -24,6 +23,7 @@ class CastsController < ApplicationController
   # GET /casts/new
   # GET /casts/new.xml
   def new
+  @movie
     @cast = Cast.new
     respond_to do |format|
       format.html # new.html.erb
@@ -40,7 +40,6 @@ class CastsController < ApplicationController
   # POST /casts.xml
   def create
     @cast = Cast.new(params[:cast])
-
     respond_to do |format|
       if @cast.save
         flash[:notice] = 'Cast was successfully created.'
@@ -58,7 +57,6 @@ class CastsController < ApplicationController
   # PUT /casts/1.xml
   def update
     @cast = Cast.find(params[:id])
-
     respond_to do |format|
       if @cast.update_attributes(params[:cast])
         flash[:notice] = 'Cast was successfully updated.'
@@ -76,7 +74,6 @@ class CastsController < ApplicationController
   def destroy
     @cast = Cast.find(params[:id])
     @cast.destroy
-
     respond_to do |format|
       format.html { redirect_to(casts_url) }
       format.xml  { head :ok }

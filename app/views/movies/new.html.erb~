@@ -49,15 +49,18 @@
         f.text_field :category_code
     %>
 
-  </p>
-  
-    <% for cast in @movie.cast %>
-    <% fields_for "movie[cast_attributes][]", (@cast) do |cast_form| %>
-	Movie code: <%= f.text_field :movie_code %>
-	Actor actress name: <%= f.text_field :actor_actress_name %>
-   	 <%= f.submit "Create" %>
-    <% end %>
+   </p>
 
+  
+  
+  <!--  <% for cast in @movie.cast %>
+    <% fields_for (@cast) do |cast_form| %>
+	 <%= f.hidden_field :movie_code %>
+	 <%= cast_form.text_field :actor_actress_name %>
+   	 <%= cast_form.submit "Create" %>
+	<% end %>
+    <% end %>-->
+    
   <p>
     <%= f.submit "Create" %>
     

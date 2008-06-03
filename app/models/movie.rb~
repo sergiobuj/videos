@@ -3,29 +3,17 @@ validates_presence_of :movie_code, :movie_title, :movie_original_title, :movie_y
 validates_numericality_of :movie_code, :movie_year, :category_code
 validate :valid_year, :valid_movie_code
 validates_uniqueness_of :movie_code
-has_many :cast# , :dependent=>:nil
-belongs_to :category# , :dependent=>:nil
+has_many :casts # , :dependent=>:nil
+
+belongs_to :categories # , :dependent=>:nil
 
 
-#CATEGORIES=[[  ]]
-
-#validates_inclusion_of :category_code, :in =>
-#  CATEGORIES.map {|one, two| two} f.select :category_code, @category_code.category_code
-
-def cast_attributes=(cast_attributes)
-  cast_attributes.each do |attributes|
-    cast.build(attributes)
-  end
-end
 
 protected
 def valid_movie_code
     errors.add(:movie_code, ' has to be numerical and greater than zero' ) if movie_code.nil? ||
     movie_code < 0
 end
-
-
-
 
 protected
 def valid_year

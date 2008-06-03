@@ -1,7 +1,7 @@
 <h1>Login#list_users</h1>
 <ul>
   <% for user in @all_users %>
-     <li><%= link_to "[X]" , { # link_to options
+     <li><%= link_to "Delete ->" , { # link_to options
                                :controller => 'login',
                                :action => 'delete_user',
                                :id => user},
@@ -13,4 +13,4 @@
      </li>
   <% end %>
 </ul>
-
+|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> |

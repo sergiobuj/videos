@@ -4,7 +4,7 @@ validates_numericality_of :category_code, :rent_price, :rent_days
 validates_uniqueness_of :category_code
 
 validate :valid_category_code, :valid_rent_price, :valid_rent_days
-has_many :movie, :dependent => false
+has_many :movie#, :dependent => false
 
 
 protected

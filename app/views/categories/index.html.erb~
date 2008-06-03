@@ -7,7 +7,6 @@
     <th>Rent price</th>
     <th>Rent days</th>
   </tr>
-
 <% for category in @categories %>
   <tr>
     <td><%=h category.category_name %></td>

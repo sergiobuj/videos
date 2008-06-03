@@ -26,6 +26,7 @@ before_filter :authorize, :except => :login
 	    flash.now[:notice] = "Invalid user or password"
 	  end
 	end
+
   end
 
 ##termina la sesión de un usuario
@@ -38,12 +39,16 @@ before_filter :authorize, :except => :login
 
 ##inicio de sesión
 ##lo primero que se ve después de iniciar la sesión
-  def index 
-
-  @total_orders = Rent.count
+  def index
+  @total_orders = Rent.count - Return.count
+  @total_movies = Movie.count
+  @total_clients= Client.count
+  @total_employees = Employee.count
+  @total_categories = Category.count
+  @total_users = User.count
   end
 
-##elimina un usiario
+##elimina un usuario
   def delete_user
 	if request.post?
 	  user = User.find(params[:id])

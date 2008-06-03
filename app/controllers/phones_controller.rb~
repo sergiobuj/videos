@@ -1,8 +1,12 @@
 class PhonesController < ApplicationController
+  # before_filter :theowner
   
   # GET /phones
   # GET /phones.xml
-
+  
+  def theowner 
+  	@owner = Client.find(params[:client_code]) || Employee.find(params[:emp_code])
+  end
   
   def index
     @phones = Phone.find(:all)

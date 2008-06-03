@@ -33,4 +33,4 @@
 
 <br />
 
-|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> | <%= link_to 'New movie', new_movie_path %> |
+<%= link_to 'New movie', new_movie_path %>

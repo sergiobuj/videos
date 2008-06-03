@@ -18,7 +18,7 @@
          <label for="user_password_confirmation">Re-enter your password:</label>
          <%= form.password_field :password_confirmation, :size => 40 %>
        </p>
-       <%= submit_tag "Add User" , :class => "submit" %>
+       <%= submit_tag "Add User" , :class => "submit" %>  |  <%= link_to "Back" , :controller => 'login', :action => 'index' %> |
     <% end %>
   </fieldset>
 </div>

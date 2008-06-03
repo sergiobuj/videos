@@ -1,7 +1,34 @@
-<h1>Login#index</h1>
-<h1>Welcome </h1>
-<%= pluralize(@total_orders, "Rent" ) @user%>
+<h1>Login Main</h1>
+<h1>Welcome</h1>
+<p>INFORMATION </p>
+|| <%= pluralize(@total_orders, "Rent" )%> in total  ||
+<p><b>|  
+    <%= link_to "Admin users list" , :controller => 'login', :action => 'list_users' %> |
+    <%= link_to "Add User" , :controller => 'login', :action => 'add_user' %> | </b>
+</p>
 <p>
-  <%= link_to "Logout" , :controller => 'login', :action => 'logout' %> | <%= link_to "Add User" , :controller => 'login', :action => 'add_user' %>
+|| <%= pluralize(@total_users, "Administrative User" )%> ||
 </p>
 
+
+
+<p><b>|
+  <%= link_to "Movies list" , :controller => 'movies', :action => 'index' %> | 
+  <%= link_to "Movie Categories" , :controller => 'categories', :action => 'index' %> | </b>
+</p>
+<p> 
+|| <%= pluralize(@total_movies, "Movie" )%> on store ||  <%= pluralize(@total_categories, "Movie Category" )%>  ||  
+</p>
+
+<p><b>|
+    <%= link_to "Clients list" , :controller => 'clients', :action => 'index' %> | 
+    <%= link_to "Employees list" , :controller => 'employees', :action => 'index' %> |</b>
+</p>
+<p>
+|| <%= pluralize(@total_clients, "client" )%> restigered  ||   <%= pluralize(@total_employees, "employee" )%> hired || 
+</p>
+
+
+
+
+<p><b> | <%= link_to "Logout" , :controller => 'login', :action => 'logout' %> | </b></p>

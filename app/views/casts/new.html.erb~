@@ -1,17 +1,13 @@
 <h1>New cast</h1>
 
 <%= error_messages_for :cast %>
-<%= javascript_include_tag :defaults %>
-<%= javascript_include_tag "prototype" %>
 <% form_for(@cast) do |f| %>
 
   <p>
-    <b>Movie code</b><br />
-    <%= f.text_field :movie_code %>
-  </p>
+    <b>Movie code</b>
+    <%= f.text_field (:movie_code,"movie_code").set('567') %>
 
-  <p>
-    <b>Actor actress name</b><br />
+    <b>Actor actress name</b>
     <%= f.text_field :actor_actress_name %>
   </p>
 

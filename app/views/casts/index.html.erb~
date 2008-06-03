@@ -1,0 +1,22 @@
+<h1>Listing casts</h1>
+
+<table>
+  <tr>
+    <th>Movie code</th>
+    <th>Actor actress name</th>
+  </tr>
+
+<% for cast in @casts %>
+  <tr>
+    <!-- <td><%=h cast.movie_code %></td> -->
+    <td><%=h cast.actor_actress_name %></td>
+    <td><%= link_to 'Show', cast %></td>
+    <td><%= link_to 'Edit', edit_cast_path(cast) %></td>
+    <td><%= link_to 'Destroy', cast, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cast', new_cast_path %>

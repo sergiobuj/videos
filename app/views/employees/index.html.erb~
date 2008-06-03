@@ -29,4 +29,4 @@
 
 <br />
 
-|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> | <%= link_to 'New employee', new_employee_path %> |
+<%= link_to 'New employee', new_employee_path %>

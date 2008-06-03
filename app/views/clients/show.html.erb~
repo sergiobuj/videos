@@ -41,4 +41,4 @@
 
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back', clients_path %> |
-<%= link_to 'Phones', phone_path %>
+<%= link_to 'Phones', phone_path(@client) %>
