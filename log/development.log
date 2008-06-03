@@ -25472,3 +25472,750 @@ Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:51:45) [GET]
   [4;36;1mSQL (0.000286)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
 Rendering login/index
 Completed in 0.06331 (15 reqs/sec) | Rendering: 0.00255 (4%) | DB: 0.00245 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:55:02) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000443)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.000302)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000263)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000256)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000228)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06317 (15 reqs/sec) | Rendering: 0.00447 (7%) | DB: 0.00230 (3%) | 200 OK [http://localhost/login]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2008-06-03 16:55:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"clients"}
+  [4;35;1mClient Load (0.001241)[0m   [0mSELECT * FROM clients [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 0.01917 (52 reqs/sec) | Rendering: 0.00758 (39%) | DB: 0.00124 (6%) | 200 OK [http://localhost/clients]
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2008-06-03 16:55:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"new", "controller"=>"clients"}
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 0.02165 (46 reqs/sec) | Rendering: 0.00898 (41%) | DB: 0.00000 (0%) | 200 OK [http://localhost/clients/new]
+
+
+Processing ClientsController#create (for 127.0.0.1 at 2008-06-03 16:55:44) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"commit"=>"Create", "client"=>{"client_surname"=>"dfgdf", "birth_date(1i)"=>"2008", "client_name"=>"erwter", "birth_date(2i)"=>"6", "birth_date(3i)"=>"3", "client_id"=>"452353245", "sing_up_date(1i)"=>"2008", "client_code"=>"3425324", "sing_up_date(2i)"=>"6", "sing_up_date(3i)"=>"3", "client_state"=>"sasaaa", "home_address"=>"sfdsdfs"}, "authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "action"=>"create", "controller"=>"clients"}
+  [4;36;1mClient Load (0.000221)[0m   [0;1mSELECT * FROM clients WHERE (clients.client_code = 3425324) LIMIT 1[0m
+  [4;35;1mClient Load (0.000159)[0m   [0mSELECT * FROM clients WHERE (clients.client_id = 452353245) LIMIT 1[0m
+  [4;36;1mClient Create (0.000291)[0m   [0;1mINSERT INTO clients ("client_surname", "updated_at", "client_name", "client_id", "client_code", "sing_up_date", "birth_date", "client_state", "home_address", "created_at") VALUES('dfgdf', '2008-06-03 16:55:44', 'erwter', 452353245, 3425324, '2008-06-03', '2008-06-03', 'sasaaa', 'sfdsdfs', '2008-06-03 16:55:44')[0m
+Redirected to http://localhost:3000/clients/2
+Completed in 0.30946 (3 reqs/sec) | DB: 0.00067 (0%) | 302 Found [http://localhost/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2008-06-03 16:55:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJUNsaWVudCB3YXMgc3VjY2Vzc2Z1%0AbGx5IGNyZWF0ZWQuBjoKQHVzZWR7BjsIVDoRb3JpZ2luYWxfdXJpMA%3D%3D--b4a902d986a2c3ee447326a385a17c3bfbd875d0
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"clients"}
+  [4;35;1mClient Load (0.000493)[0m   [0mSELECT * FROM clients WHERE (clients."id" = 2) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 0.02266 (44 reqs/sec) | Rendering: 0.00697 (30%) | DB: 0.00049 (2%) | 200 OK [http://localhost/clients/2]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2008-06-03 16:55:47) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"clients"}
+  [4;36;1mClient Load (0.001582)[0m   [0;1mSELECT * FROM clients [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 0.02248 (44 reqs/sec) | Rendering: 0.00961 (42%) | DB: 0.00158 (7%) | 200 OK [http://localhost/clients]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:55:48) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000397)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.000277)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000291)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000296)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06147 (16 reqs/sec) | Rendering: 0.00247 (4%) | DB: 0.00231 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:56:06) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000391)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.000280)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000280)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000308)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06377 (15 reqs/sec) | Rendering: 0.00471 (7%) | DB: 0.00233 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:56:15) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000454)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.000328)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000274)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000321)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000358)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000279)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000282)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06629 (15 reqs/sec) | Rendering: 0.00475 (7%) | DB: 0.00259 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:56:21) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000390)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000270)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000286)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000276)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000287)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06355 (15 reqs/sec) | Rendering: 0.00257 (4%) | DB: 0.00230 (3%) | 200 OK [http://localhost/login]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2008-06-03 16:56:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"clients"}
+  [4;35;1mClient Load (0.001393)[0m   [0mSELECT * FROM clients [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 0.01947 (51 reqs/sec) | Rendering: 0.00844 (43%) | DB: 0.00139 (7%) | 200 OK [http://localhost/clients]
+
+
+Processing ClientsController#destroy (for 127.0.0.1 at 2008-06-03 16:56:29) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "_method"=>"delete", "action"=>"destroy", "id"=>"1", "controller"=>"clients"}
+  [4;36;1mClient Load (0.000501)[0m   [0;1mSELECT * FROM clients WHERE (clients."id" = 1) [0m
+  [4;35;1mClient Destroy (0.000289)[0m   [0m DELETE FROM clients
+ WHERE "id" = 1
+[0m
+Redirected to http://localhost:3000/clients
+Completed in 0.12183 (8 reqs/sec) | DB: 0.00079 (0%) | 302 Found [http://localhost/clients/1]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2008-06-03 16:56:29) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"clients"}
+  [4;36;1mClient Load (0.001228)[0m   [0;1mSELECT * FROM clients [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 0.01934 (51 reqs/sec) | Rendering: 0.00762 (39%) | DB: 0.00123 (6%) | 200 OK [http://localhost/clients]
+
+
+Processing ClientsController#destroy (for 127.0.0.1 at 2008-06-03 16:56:31) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "_method"=>"delete", "action"=>"destroy", "id"=>"2", "controller"=>"clients"}
+  [4;35;1mClient Load (0.000574)[0m   [0mSELECT * FROM clients WHERE (clients."id" = 2) [0m
+  [4;36;1mClient Destroy (0.000255)[0m   [0;1m DELETE FROM clients
+ WHERE "id" = 2
+[0m
+Redirected to http://localhost:3000/clients
+Completed in 0.12438 (8 reqs/sec) | DB: 0.00083 (0%) | 302 Found [http://localhost/clients/2]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2008-06-03 16:56:31) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"clients"}
+  [4;35;1mClient Load (0.001000)[0m   [0mSELECT * FROM clients [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 0.08030 (12 reqs/sec) | Rendering: 0.00182 (2%) | DB: 0.00100 (1%) | 200 OK [http://localhost/clients]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:56:32) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000652)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000391)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000427)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000295)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000312)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06894 (14 reqs/sec) | Rendering: 0.00253 (3%) | DB: 0.00301 (4%) | 200 OK [http://localhost/login]
+
+
+Processing EmployeesController#index (for 127.0.0.1 at 2008-06-03 16:56:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"employees"}
+  [4;36;1mEmployee Load (0.001180)[0m   [0;1mSELECT * FROM employees [0m
+Rendering template within layouts/employees
+Rendering employees/index
+Completed in 0.01691 (59 reqs/sec) | Rendering: 0.00659 (38%) | DB: 0.00118 (6%) | 200 OK [http://localhost/employees]
+
+
+Processing EmployeesController#destroy (for 127.0.0.1 at 2008-06-03 16:56:45) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "_method"=>"delete", "action"=>"destroy", "id"=>"1", "controller"=>"employees"}
+  [4;35;1mEmployee Load (0.000472)[0m   [0mSELECT * FROM employees WHERE (employees."id" = 1) [0m
+  [4;36;1mEmployee Destroy (0.000295)[0m   [0;1m DELETE FROM employees
+ WHERE "id" = 1
+[0m
+Redirected to http://localhost:3000/employees
+Completed in 0.01828 (54 reqs/sec) | DB: 0.00077 (4%) | 302 Found [http://localhost/employees/1]
+
+
+Processing EmployeesController#index (for 127.0.0.1 at 2008-06-03 16:56:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"employees"}
+  [4;35;1mEmployee Load (0.000902)[0m   [0mSELECT * FROM employees [0m
+Rendering template within layouts/employees
+Rendering employees/index
+Completed in 0.01210 (82 reqs/sec) | Rendering: 0.00181 (14%) | DB: 0.00090 (7%) | 200 OK [http://localhost/employees]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:56:46) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000396)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000311)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000298)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000280)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000278)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000224)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06122 (16 reqs/sec) | Rendering: 0.00246 (4%) | DB: 0.00234 (3%) | 200 OK [http://localhost/login]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-03 16:56:49) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.001244)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.02291 (43 reqs/sec) | Rendering: 0.00705 (30%) | DB: 0.00124 (5%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#destroy (for 127.0.0.1 at 2008-06-03 16:56:51) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "_method"=>"delete", "action"=>"destroy", "id"=>"10", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.000945)[0m   [0mSELECT * FROM movies WHERE (movies."id" = 10) [0m
+  [4;36;1mMovie Destroy (0.000316)[0m   [0;1m DELETE FROM movies
+ WHERE "id" = 10
+[0m
+Redirected to http://localhost:3000/movies
+Completed in 0.02149 (46 reqs/sec) | DB: 0.00126 (5%) | 302 Found [http://localhost/movies/10]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-03 16:56:51) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.000888)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.01621 (61 reqs/sec) | Rendering: 0.00176 (10%) | DB: 0.00089 (5%) | 200 OK [http://localhost/movies]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:56:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000407)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000326)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000388)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000230)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06404 (15 reqs/sec) | Rendering: 0.00267 (4%) | DB: 0.00245 (3%) | 200 OK [http://localhost/login]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-03 16:56:54) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mCategory Load (0.001264)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.01617 (61 reqs/sec) | Rendering: 0.00574 (35%) | DB: 0.00126 (7%) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#destroy (for 127.0.0.1 at 2008-06-03 16:56:57) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "_method"=>"delete", "action"=>"destroy", "id"=>"7", "controller"=>"categories"}
+  [4;35;1mCategory Load (0.000415)[0m   [0mSELECT * FROM categories WHERE (categories."id" = 7) [0m
+  [4;36;1mCategory Destroy (0.000401)[0m   [0;1m DELETE FROM categories
+ WHERE "id" = 7
+[0m
+Redirected to http://localhost:3000/categories
+Completed in 0.02004 (49 reqs/sec) | DB: 0.00082 (4%) | 302 Found [http://localhost/categories/7]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-03 16:56:57) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mCategory Load (0.001181)[0m   [0mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.01645 (60 reqs/sec) | Rendering: 0.00543 (33%) | DB: 0.00118 (7%) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#destroy (for 127.0.0.1 at 2008-06-03 16:56:58) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "_method"=>"delete", "action"=>"destroy", "id"=>"6", "controller"=>"categories"}
+  [4;36;1mCategory Load (0.000453)[0m   [0;1mSELECT * FROM categories WHERE (categories."id" = 6) [0m
+  [4;35;1mCategory Destroy (0.000283)[0m   [0m DELETE FROM categories
+ WHERE "id" = 6
+[0m
+Redirected to http://localhost:3000/categories
+Completed in 0.14076 (7 reqs/sec) | DB: 0.00074 (0%) | 302 Found [http://localhost/categories/6]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-03 16:56:59) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mCategory Load (0.000898)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.01166 (85 reqs/sec) | Rendering: 0.00174 (14%) | DB: 0.00090 (7%) | 200 OK [http://localhost/categories]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:57:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000403)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.000295)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000274)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000279)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000291)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000323)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06420 (15 reqs/sec) | Rendering: 0.00258 (4%) | DB: 0.00237 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#list_users (for 127.0.0.1 at 2008-06-03 16:57:01) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"action"=>"list_users", "controller"=>"login"}
+  [4;35;1mUser Load (0.000375)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;36;1mUser Load (0.000518)[0m   [0;1mSELECT * FROM users [0m
+Rendering login/list_users
+Completed in 0.01705 (58 reqs/sec) | Rendering: 0.00292 (17%) | DB: 0.00089 (5%) | 200 OK [http://localhost/login/list_users]
+
+
+Processing LoginController#delete_user (for 127.0.0.1 at 2008-06-03 16:57:04) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--069902bcae85862cd0cc292ac1bdb07fba0d5eb2
+  Parameters: {"authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "action"=>"delete_user", "id"=>"5", "controller"=>"login"}
+  [4;35;1mUser Load (0.000392)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+  [4;36;1mUser Load (0.000456)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 5) [0m
+  [4;35;1mUser Destroy (0.000233)[0m   [0m DELETE FROM users
+ WHERE "id" = 5
+[0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Redirected to http://localhost:3000/login/list_users
+Completed in 0.02373 (42 reqs/sec) | DB: 0.00130 (5%) | 302 Found [http://localhost/login/delete_user/5]
+
+
+Processing LoginController#list_users (for 127.0.0.1 at 2008-06-03 16:57:04) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiF1VzZXIgYWRtaW4gZGVsZXRlZAY6%0ACkB1c2VkewY7CFQ6EW9yaWdpbmFsX3VyaTA%3D--8cf88e65f94bcd4a37c150163bf3e40c989c9039
+  Parameters: {"action"=>"list_users", "controller"=>"login"}
+  [4;35;1mUser Load (0.000194)[0m   [0mSELECT * FROM users WHERE (users."id" = 5) LIMIT 1[0m
+Redirected to http://localhost:3000/login/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0xb593fde0 @filter=:authorize>] rendered_or_redirected.
+Completed in 0.01051 (95 reqs/sec) | DB: 0.00019 (1%) | 302 Found [http://localhost/login/list_users]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 16:57:04) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkKOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiEWxvZyBpbiBmaXJzdAY6CkB1c2Vk%0AewY7CFQ6EW9yaWdpbmFsX3VyaTA%3D--f332c7468013bfd9648599f6f5bb84a68827ecf5
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering login/login
+Completed in 0.00546 (183 reqs/sec) | Rendering: 0.00175 (32%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 16:57:11) [POST]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOhFvcmlnaW5hbF91cmkw--69b436a2ad1ab03a36dd1c99917a0ab845b789ca
+  Parameters: {"name"=>"sergio", "commit"=>"Login", "authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "action"=>"login", "controller"=>"login", "password"=>"admin"}
+  [4;36;1mUser Load (0.000422)[0m   [0;1mSELECT * FROM users WHERE (users."name" = 'sergio') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 0.07964 (12 reqs/sec) | DB: 0.00042 (0%) | 302 Found [http://localhost/login/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:57:11) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkJOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--e38eec025c966e5cf463b324879e16d0e5ba1d3d
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000408)[0m   [0mSELECT * FROM users WHERE (users."id" = 4) LIMIT 1[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000298)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000307)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06306 (15 reqs/sec) | Rendering: 0.00244 (3%) | DB: 0.00234 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2008-06-03 16:57:13) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkJOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--e38eec025c966e5cf463b324879e16d0e5ba1d3d
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+  [4;35;1mUser Load (0.000395)[0m   [0mSELECT * FROM users WHERE (users."id" = 4) LIMIT 1[0m
+Rendering login/add_user
+Completed in 0.01672 (59 reqs/sec) | Rendering: 0.00327 (19%) | DB: 0.00040 (2%) | 200 OK [http://localhost/login/add_user]
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2008-06-03 16:57:21) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkJOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--e38eec025c966e5cf463b324879e16d0e5ba1d3d
+  Parameters: {"user"=>{"name"=>"admin", "password_confirmation"=>"admin", "password"=>"admin"}, "commit"=>"Add User", "authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "action"=>"add_user", "controller"=>"login"}
+  [4;36;1mUser Load (0.000413)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 4) LIMIT 1[0m
+  [4;35;1mUser Load (0.000216)[0m   [0mSELECT * FROM users WHERE (users.name = 'admin') LIMIT 1[0m
+  [4;36;1mUser Create (0.000281)[0m   [0;1mINSERT INTO users ("name", "salt", "updated_at", "hashed_password", "created_at") VALUES('admin', '-6240736380.270610618300405', '2008-06-03 16:57:21', 'd763dae9f0b930a5f2cdd3fd24b3caa0d22814b0', '2008-06-03 16:57:21')[0m
+Rendering login/add_user
+Completed in 0.02632 (37 reqs/sec) | Rendering: 0.00235 (8%) | DB: 0.00091 (3%) | 200 OK [http://localhost/login/add_user]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:57:23) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkJOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--e38eec025c966e5cf463b324879e16d0e5ba1d3d
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000387)[0m   [0mSELECT * FROM users WHERE (users."id" = 4) LIMIT 1[0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000262)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000293)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000340)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000278)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06200 (16 reqs/sec) | Rendering: 0.00274 (4%) | DB: 0.00234 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#list_users (for 127.0.0.1 at 2008-06-03 16:57:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkJOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--e38eec025c966e5cf463b324879e16d0e5ba1d3d
+  Parameters: {"action"=>"list_users", "controller"=>"login"}
+  [4;35;1mUser Load (0.000372)[0m   [0mSELECT * FROM users WHERE (users."id" = 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.000525)[0m   [0;1mSELECT * FROM users [0m
+Rendering login/list_users
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00292 (17%) | DB: 0.00090 (5%) | 200 OK [http://localhost/login/list_users]
+
+
+Processing LoginController#delete_user (for 127.0.0.1 at 2008-06-03 16:57:27) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkJOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--e38eec025c966e5cf463b324879e16d0e5ba1d3d
+  Parameters: {"authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "action"=>"delete_user", "id"=>"4", "controller"=>"login"}
+  [4;35;1mUser Load (0.000396)[0m   [0mSELECT * FROM users WHERE (users."id" = 4) LIMIT 1[0m
+  [4;36;1mUser Load (0.000454)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 4) [0m
+  [4;35;1mUser Destroy (0.000254)[0m   [0m DELETE FROM users
+ WHERE "id" = 4
+[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Redirected to http://localhost:3000/login/list_users
+Completed in 0.02258 (44 reqs/sec) | DB: 0.00133 (5%) | 302 Found [http://localhost/login/delete_user/4]
+
+
+Processing LoginController#list_users (for 127.0.0.1 at 2008-06-03 16:57:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkJOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiGFVzZXIgc2VyZ2lvIGRlbGV0ZWQG%0AOgpAdXNlZHsGOwhUOhFvcmlnaW5hbF91cmkw--ce6641236d851a26721244f0587446205db6814b
+  Parameters: {"action"=>"list_users", "controller"=>"login"}
+  [4;35;1mUser Load (0.000204)[0m   [0mSELECT * FROM users WHERE (users."id" = 4) LIMIT 1[0m
+Redirected to http://localhost:3000/login/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0xb58f84b8 @filter=:authorize>] rendered_or_redirected.
+Completed in 0.01089 (91 reqs/sec) | DB: 0.00020 (1%) | 302 Found [http://localhost/login/list_users]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 16:57:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkJOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiEWxvZyBpbiBmaXJzdAY6CkB1c2Vk%0AewY7CFQ6EW9yaWdpbmFsX3VyaTA%3D--b1fcb95162fb8c716bb113ca05e4f4c3fd7ce631
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering login/login
+Completed in 0.00542 (184 reqs/sec) | Rendering: 0.00167 (30%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 16:57:34) [POST]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOhFvcmlnaW5hbF91cmkw--69b436a2ad1ab03a36dd1c99917a0ab845b789ca
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "action"=>"login", "controller"=>"login", "password"=>"admin"}
+  [4;36;1mUser Load (0.000393)[0m   [0;1mSELECT * FROM users WHERE (users."name" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 0.01608 (62 reqs/sec) | DB: 0.00039 (2%) | 302 Found [http://localhost/login/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:57:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000436)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000294)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000272)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000272)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000279)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000261)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000224)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06271 (15 reqs/sec) | Rendering: 0.00250 (3%) | DB: 0.00231 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:58:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000411)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000301)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000339)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000281)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.13384 (7 reqs/sec) | Rendering: 0.00485 (3%) | DB: 0.00241 (1%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 16:58:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000389)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000302)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000261)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000287)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000259)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000320)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000262)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06364 (15 reqs/sec) | Rendering: 0.00482 (7%) | DB: 0.00235 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:00:29) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000410)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000374)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000276)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000290)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000294)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.13479 (7 reqs/sec) | Rendering: 0.00492 (3%) | DB: 0.00245 (1%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:01:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000376)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000275)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000270)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000313)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000296)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06464 (15 reqs/sec) | Rendering: 0.00488 (7%) | DB: 0.00232 (3%) | 200 OK [http://localhost/login]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-03 17:03:44) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mMovie Load (0.000938)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.01773 (56 reqs/sec) | Rendering: 0.00179 (10%) | DB: 0.00094 (5%) | 200 OK [http://localhost/movies]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:03:47) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000390)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mSQL (0.000296)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000262)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000269)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000282)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000228)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06166 (16 reqs/sec) | Rendering: 0.00246 (3%) | DB: 0.00227 (3%) | 200 OK [http://localhost/login]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-03 17:03:48) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mMovie Load (0.000895)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.01583 (63 reqs/sec) | Rendering: 0.00174 (10%) | DB: 0.00090 (5%) | 200 OK [http://localhost/movies]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:03:58) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000394)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000278)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000261)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000290)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06172 (16 reqs/sec) | Rendering: 0.00248 (4%) | DB: 0.00225 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#logout (for 127.0.0.1 at 2008-06-03 17:04:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"logout", "controller"=>"login"}
+  [4;35;1mUser Load (0.000380)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+Redirected to http://localhost:3000/login/login
+Completed in 0.01458 (68 reqs/sec) | DB: 0.00038 (2%) | 302 Found [http://localhost/login/logout]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 17:04:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewY6C25vdGljZSIPTG9nZ2VkIG91dAY6CkB1c2VkewY7%0ACFQ6EW9yaWdpbmFsX3VyaTA%3D--dc77b1c18a852a6cf5b618f87e6eb08695d99a06
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering login/login
+Completed in 0.00589 (169 reqs/sec) | Rendering: 0.00178 (30%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:04:04) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOhFvcmlnaW5hbF91cmkw--69b436a2ad1ab03a36dd1c99917a0ab845b789ca
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000195)[0m   [0;1mSELECT * FROM users WHERE (users."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/login/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0xb597b73c @filter=:authorize>] rendered_or_redirected.
+Completed in 0.01029 (97 reqs/sec) | DB: 0.00019 (1%) | 302 Found [http://localhost/login/]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 17:04:04) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewY6C25vdGljZSIRbG9nIGluIGZpcnN0BjoKQHVzZWR7%0ABjsIVDoRb3JpZ2luYWxfdXJpMA%3D%3D--c441adfefa099023339d6bfe0b2b6abb4e3c70ec
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering login/login
+Completed in 0.00533 (187 reqs/sec) | Rendering: 0.00168 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 17:05:54) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOhFvcmlnaW5hbF91cmkw--69b436a2ad1ab03a36dd1c99917a0ab845b789ca
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering login/login
+Completed in 0.00524 (190 reqs/sec) | Rendering: 0.00167 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-03 17:06:01) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOhFvcmlnaW5hbF91cmkw--69b436a2ad1ab03a36dd1c99917a0ab845b789ca
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000283)[0m   [0mSELECT * FROM users WHERE (users."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/login/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0xb59cbf48 @filter=:authorize>] rendered_or_redirected.
+Completed in 0.01098 (91 reqs/sec) | DB: 0.00028 (2%) | 302 Found [http://localhost/movies]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 17:06:01) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewY6C25vdGljZSIRbG9nIGluIGZpcnN0BjoKQHVzZWR7%0ABjsIVDoRb3JpZ2luYWxfdXJpMA%3D%3D--c441adfefa099023339d6bfe0b2b6abb4e3c70ec
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering login/login
+Completed in 0.00532 (187 reqs/sec) | Rendering: 0.00168 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-03 17:08:19) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOhFvcmlnaW5hbF91cmkw--69b436a2ad1ab03a36dd1c99917a0ab845b789ca
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.000206)[0m   [0;1mSELECT * FROM users WHERE (users."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/login/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0xb589f930 @filter=:authorize>] rendered_or_redirected.
+Completed in 0.01027 (97 reqs/sec) | DB: 0.00021 (2%) | 302 Found [http://localhost/categories]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 17:08:19) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewY6C25vdGljZSIRbG9nIGluIGZpcnN0BjoKQHVzZWR7%0ABjsIVDoRb3JpZ2luYWxfdXJpMA%3D%3D--c441adfefa099023339d6bfe0b2b6abb4e3c70ec
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering login/login
+Completed in 0.00573 (174 reqs/sec) | Rendering: 0.00184 (32%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-03 17:08:31) [POST]
+  Session ID: BAh7CToMdXNlcl9pZDA6DGNzcmZfaWQiJTI0YzJmYWQzNDk5OWIxMjI0ZTcw%0AMmJlZjA4OWRiNjE2IgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOhFvcmlnaW5hbF91cmkw--69b436a2ad1ab03a36dd1c99917a0ab845b789ca
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"8fad9ff3385e3efd1e4b4031c71352d954d4877f", "action"=>"login", "controller"=>"login", "password"=>"admin"}
+  [4;35;1mUser Load (0.000386)[0m   [0mSELECT * FROM users WHERE (users."name" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 0.01558 (64 reqs/sec) | DB: 0.00039 (2%) | 302 Found [http://localhost/login/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:08:31) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000386)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000292)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000388)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000367)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06233 (16 reqs/sec) | Rendering: 0.00244 (3%) | DB: 0.00251 (4%) | 200 OK [http://localhost/login]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-03 17:08:36) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.000394)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000255)[0m   [0mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.02249 (44 reqs/sec) | Rendering: 0.00177 (7%) | DB: 0.00065 (2%) | 200 OK [http://localhost/categories]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:12:26) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000385)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mSQL (0.000279)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000363)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000310)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000228)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06424 (15 reqs/sec) | Rendering: 0.00512 (7%) | DB: 0.00235 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:12:28) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000395)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mSQL (0.000281)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000390)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000277)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000254)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06452 (15 reqs/sec) | Rendering: 0.00254 (3%) | DB: 0.00242 (3%) | 200 OK [http://localhost/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-03 17:13:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiUyNGMyZmFkMzQ5OTliMTIyNGU3%0AMDJiZWYwODlkYjYxNiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh%0Ac2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7ADoRb3JpZ2luYWxfdXJpMA%3D%3D--70543ed66d5af3fe1920824b304dbea398734d12
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000501)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mSQL (0.000281)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000262)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000265)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000297)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000227)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06658 (15 reqs/sec) | Rendering: 0.00478 (7%) | DB: 0.00239 (3%) | 200 OK [http://localhost/login]

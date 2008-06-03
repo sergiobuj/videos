@@ -46,6 +46,7 @@ class MoviesController < ApplicationController
   # GET /movies/1/edit
   def edit
     @movie = Movie.find(params[:id])
+    @categories=Category.find(:all)
   end
 
   ##Método que se llama para crear la entrada de la pelicula en la base de datos

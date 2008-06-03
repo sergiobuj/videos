@@ -1,5 +1,4 @@
 class ClientsController < ApplicationController
-before_filter :authorize, :except => :login
   # GET /clients
   # GET /clients.xml
   def index

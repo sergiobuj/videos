@@ -1,5 +1,4 @@
 class EmployeesController < ApplicationController
-before_filter :authorize, :except => :login
   # GET /employees
   # GET /employees.xml
   def index

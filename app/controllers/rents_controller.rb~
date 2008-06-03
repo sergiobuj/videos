@@ -1,5 +1,4 @@
 class RentsController < ApplicationController
-before_filter :authorize, :except => :login
   # GET /rents
   # GET /rents.xml
   def index

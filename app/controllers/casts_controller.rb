@@ -1,4 +1,5 @@
 class CastsController < ApplicationController
+before_filter :authorize, :except => :login
   # GET /casts
   # GET /casts.xml
   def index

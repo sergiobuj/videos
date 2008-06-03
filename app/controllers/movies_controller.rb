@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  
+  before_filter :authorize
   
   
   ##Método que muestra en pantalla la lista de todas las peliculas registrdas

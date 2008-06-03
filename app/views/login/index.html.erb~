@@ -1,7 +1,11 @@
-<h1>Login Main</h1>
-<h1>Welcome</h1>
-<p>INFORMATION </p>
+<DIV ALIGN=CENTER>
+
+<h1>Main Page</h1>
+<h1>Video Rental Store</h1>
+<h1>Admin System</h1>
+<p>INFORMATION & TASKS</p>
 || <%= pluralize(@total_orders, "Rent" )%> in total  ||
+
 <p><b>|  
     <%= link_to "Admin users list" , :controller => 'login', :action => 'list_users' %> |
     <%= link_to "Add User" , :controller => 'login', :action => 'add_user' %> | </b>
@@ -25,10 +29,11 @@
     <%= link_to "Employees list" , :controller => 'employees', :action => 'index' %> |</b>
 </p>
 <p>
-|| <%= pluralize(@total_clients, "client" )%> restigered  ||   <%= pluralize(@total_employees, "employee" )%> hired || 
+|| <%= pluralize(@total_clients, "client" )%> registered ||   <%= pluralize(@total_employees, "employee" )%> hired || 
 </p>
 
 
 
 
 <p><b> | <%= link_to "Logout" , :controller => 'login', :action => 'logout' %> | </b></p>
+</DIV>
