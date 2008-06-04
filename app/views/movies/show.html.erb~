@@ -43,8 +43,13 @@
   <%=h @movie.category_code %>
 </p>
 
+<p>
+  <b>Available:</b>
+  <%=h @movie.available %>
+</p>
+
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %> |
-<%= link_to 'Set Cast' new_cast_path %>
+
 

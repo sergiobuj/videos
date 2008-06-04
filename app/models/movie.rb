@@ -1,6 +1,6 @@
 class Movie < ActiveRecord::Base
-validates_presence_of :movie_code, :movie_title, :movie_original_title, :movie_year, :movie_director, :genre, :country, :place_in_store, :category_code
-validates_numericality_of :movie_code, :movie_year, :category_code
+validates_presence_of :movie_code, :movie_title, :movie_original_title, :movie_year, :movie_director, :genre, :country, :place_in_store#, :category_code
+validates_numericality_of :movie_code, :movie_year # :category_code
 validate :valid_year, :valid_movie_code
 validates_uniqueness_of :movie_code
 has_many :casts # , :dependent=>:nil

@@ -1,0 +1,27 @@
+<h1>Editing return</h1>
+
+<%= error_messages_for :return %>
+
+<% form_for(@return) do |f| %>
+  <p>
+    <b>Rent code</b><br />
+    <%= f.text_field :rent_code %>
+  </p>
+
+  <p>
+    <b>Return date</b><br />
+    <%= f.date_select :return_date %>
+  </p>
+
+  <p>
+    <b>Charges</b><br />
+    <%= f.text_field :charges %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @return %> |
+<%= link_to 'Back', returns_path %>

@@ -1,4 +1,5 @@
 class LoginController < ApplicationController
+## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
 before_filter :authorize, :except => :login
 
 ##Toma los valores y crea un nuevo usuario
@@ -45,6 +46,8 @@ before_filter :authorize, :except => :login
   @total_clients= Client.count
   @total_employees = Employee.count
   @total_categories = Category.count
+  @total_users = User.count
+  user = User.find(params[:id])
   end
 
 ##elimina un usuario
@@ -67,3 +70,6 @@ before_filter :authorize, :except => :login
  	 @all_users = User.find(:all)
   end
 end
+
+
+

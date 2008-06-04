@@ -1,3 +1,9 @@
+<DIV ALIGN=CENTER>
+<p>
+  <b>Category Name:</b>
+  <%=h @category.category_name %>
+</p>
+
 <p>
   <b>Category code:</b>
   <%=h @category.category_code %>
@@ -15,4 +21,4 @@
 
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<%= link_to 'Back', categories_path %> |  </DIV>

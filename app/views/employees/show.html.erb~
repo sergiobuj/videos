@@ -1,0 +1,38 @@
+<p>
+  <b>Emp code:</b>
+  <%=h @employee.emp_code %>
+</p>
+
+<p>
+  <b>Emp:</b>
+  <%=h @employee.emp_id %>
+</p>
+
+<p>
+  <b>Emp name:</b>
+  <%=h @employee.emp_name %>
+</p>
+
+<p>
+  <b>Emp surname:</b>
+  <%=h @employee.emp_surname %>
+</p>
+
+<p>
+  <b>Emp state:</b>
+  <%=h @employee.emp_state %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%=h @employee.start_date %>
+</p>
+
+<p>
+  <b>Home address:</b>
+  <%=h @employee.home_address %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

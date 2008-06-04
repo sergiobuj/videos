@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 11) do
+ActiveRecord::Schema.define(:version => 12) do
 
   create_table "availables", :force => true do |t|
     t.integer  "movie_code"
@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(:version => 11) do
     t.integer  "category_code"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "available"
   end
 
   create_table "phones", :force => true do |t|

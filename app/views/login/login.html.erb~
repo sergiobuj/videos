@@ -1,2 +1,21 @@
 <h1>Login#login</h1>
-<p>Find me in app/views/login/login.html.erb</p>
+<DIV ALIGN=CENTER>
+<div class="depot-form">
+  <fieldset>
+    <legend>Please Log In</legend>
+    <% form_tag do %>
+       <p>
+         <label for="name">Username:</label>
+         <%= text_field_tag :name, params[:name] %>
+       </p>
+       <p>
+         <label for="password">User password:</label>
+         <%= password_field_tag :password, params[:password] %>
+       </p>
+       <p>
+         <%= submit_tag "Login" %>
+       </p>
+    <% end %>
+  </fieldset>
+</div></DIV>
+

@@ -1,4 +1,5 @@
 class ReturnsController < ApplicationController
+before_filter :authorize, :except => :login
   # GET /returns
   # GET /returns.xml
   def index

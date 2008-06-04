@@ -1,5 +1,5 @@
 <h1>Login#add_user</h1>
-
+<DIV ALIGN=CENTER>
 
 <div class="depot-form">
   <%= error_messages_for 'user' %>
@@ -11,15 +11,18 @@
          <%= form.text_field :name, :size => 40 %>
        </p>
        <p>
-         <label for="user_password">Your password here:</label>
+         <label for="user_password">password:</label>
          <%= form.password_field :password, :size => 40 %>
        </p>
        <p>
-         <label for="user_password_confirmation">Re-enter your password:</label>
+         <label for="user_password_confirmation">Re-enter password:</label>
          <%= form.password_field :password_confirmation, :size => 40 %>
        </p>
-       <%= submit_tag "Add User" , :class => "submit" %>
+       <%= submit_tag "Add User" , :class => "submit" %>  
     <% end %>
   </fieldset>
-</div>
+  
+</div> 
+|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> |
+</DIV>
 

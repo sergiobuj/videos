@@ -1,5 +1,7 @@
 class AvailablesController < ApplicationController
-before_filter :authorize, :except => :login
+## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
+before_filter :authorize
+  
   # GET /availables
   # GET /availables.xml
   def index
@@ -72,6 +74,8 @@ before_filter :authorize, :except => :login
     end
   end
 
+
+## Elimina la información de disponibilidad de una pelicula.
   # DELETE /availables/1
   # DELETE /availables/1.xml
   def destroy

@@ -1,4 +1,5 @@
 class PhonesController < ApplicationController
+before_filter :authorize, :except => :login
   
   # GET /phones
   # GET /phones.xml

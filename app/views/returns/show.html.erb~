@@ -1,0 +1,18 @@
+<p>
+  <b>Rent code:</b>
+  <%=h @return.rent_code %>
+</p>
+
+<p>
+  <b>Return date:</b>
+  <%=h @return.return_date %>
+</p>
+
+<p>
+  <b>Charges:</b>
+  <%=h @return.charges %>
+</p>
+
+
+<%= link_to 'Edit', edit_return_path(@return) %> |
+<%= link_to 'Back', returns_path %>

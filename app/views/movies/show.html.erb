@@ -1,3 +1,4 @@
+<DIV ALIGN=CENTER>
 <p>
   <b>Movie code:</b>
   <%=h @movie.movie_code %>
@@ -43,8 +44,13 @@
   <%=h @movie.category_code %>
 </p>
 
+<p>
+  <b>Available:</b>
+  <%=h @movie.available %>
+</p>
+
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %> |
+<%= link_to 'Back', movies_path %> |</DIV>
 
 

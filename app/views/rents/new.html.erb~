@@ -1,0 +1,41 @@
+<h1>New rent</h1>
+
+<%= error_messages_for :rent %>
+
+<% form_for(@rent) do |f| %>
+  <p>
+    <b>Rent code</b><br />
+    <%= f.text_field :rent_code %>
+  </p>
+
+  <p>
+    <b>Movie code</b><br />
+    <%= f.text_field :movie_code %>
+  </p>
+
+  <p>
+    <b>Client code</b><br />
+    <%= f.text_field :client_code %>
+  </p>
+
+  <p>
+    <b>Emp code</b><br />
+    <%= f.text_field :emp_code %>
+  </p>
+
+  <p>
+    <b>Rent date</b><br />
+    <%= f.date_select :rent_date %>
+  </p>
+
+  <p>
+    <b>Exp date</b><br />
+    <%= f.date_select :exp_date %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', rents_path %>

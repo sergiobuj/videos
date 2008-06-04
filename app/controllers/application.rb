@@ -8,12 +8,13 @@ class ApplicationController < ActionController::Base
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => 'e49d37925d76c462e41ed6a83aea855d'
 
+##Controla la sesión de administrados
 session :session_key => '_videos_session_id'
 private
-def authorize
+def authorize ## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
   unless User.find_by_id(session[:user_id])
-    flash[:notice] = "log in first"
     redirect_to(:controller => "login" , :action => "login" )
+    flash[:notice] = 'log in first'
   end
 end
 

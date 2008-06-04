@@ -1,5 +1,5 @@
 class AvailablesController < ApplicationController
-
+before_filter :authorize, :except => :login
   # GET /availables
   # GET /availables.xml
   def index

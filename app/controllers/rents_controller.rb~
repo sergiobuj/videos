@@ -1,4 +1,6 @@
 class RentsController < ApplicationController
+## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
+before_filter :authorize
   # GET /rents
   # GET /rents.xml
   def index

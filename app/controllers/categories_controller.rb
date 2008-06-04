@@ -1,11 +1,10 @@
 class CategoriesController < ApplicationController
-
-before_filter :authorize, :except => :login
+## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
+before_filter :authorize
   # GET /categories
   # GET /categories.xml
   def index
     @categories = Category.find(:all)
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @categories }

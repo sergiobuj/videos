@@ -1,5 +1,6 @@
 class RentsController < ApplicationController
-before_filter :authorize, :except => :login
+## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
+##before_filter :authorize
   # GET /rents
   # GET /rents.xml
   def index
@@ -26,10 +27,10 @@ before_filter :authorize, :except => :login
   # GET /rents/new.xml
   def new
     @rent = Rent.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @rent }
+     ## @movie = Movie.find(params :)
     end
   end
 

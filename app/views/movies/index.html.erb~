@@ -1,5 +1,5 @@
 <h1>Listing movies</h1>
-
+<DIV ALIGN=CENTER>
 <table>
   <tr>
     <th>Movie code</th>
@@ -11,6 +11,7 @@
     <th>Country</th>
     <th>Place in store</th>
     <th>Category code</th>
+    <th>In Store</th>
   </tr>
 
 <% for movie in @movies %>
@@ -24,6 +25,7 @@
     <td><%=h movie.country %></td>
     <td><%=h movie.place_in_store %></td>
     <td><%=h movie.category_code %></td>
+    <td><%=h movie.available %></td>
     <td><%= link_to 'Show', movie %></td>
     <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
     <td><%= link_to 'Destroy', movie, :confirm => "Delete movie?", :method => :delete %></td>
@@ -33,4 +35,5 @@
 
 <br />
 
-<%= link_to 'New movie', new_movie_path %>
+|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> | <%= link_to 'New movie', new_movie_path %> |  <%= link_to 'Available Movies', 'av' %> |<%= link_to "Categories" , :controller => 'categories', :action => 'index' %> |
+</DIV>

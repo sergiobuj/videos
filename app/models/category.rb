@@ -1,10 +1,10 @@
 class Category < ActiveRecord::Base
 validates_presence_of :category_code, :rent_price, :rent_days, :category_name
 validates_numericality_of :category_code, :rent_price, :rent_days
-validates_uniqueness_of :category_code
+validates_uniqueness_of :category_code, :category_name
 
 validate :valid_category_code, :valid_rent_price, :valid_rent_days
-has_many :movies #, :dependent => false
+has_many :movies
 
 
 protected

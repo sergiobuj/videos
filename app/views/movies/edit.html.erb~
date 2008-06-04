@@ -48,15 +48,18 @@
     
     <select>
    <% @categories.each do |category| %>
-       <option <%= category.category_code %> 
-      
+       <option <%= category.category_name %> 
        </option>
    <% end %>
   </select>
-    
-    
     <%= f.text_field :category_code %>
   </p>
+
+  <p>
+    <b>Available</b><br />
+    <%= f.check_box :available %>
+  </p>
+
 
   <p>
     <%= f.submit "Update" %>

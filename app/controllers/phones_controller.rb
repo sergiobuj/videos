@@ -1,5 +1,6 @@
 class PhonesController < ApplicationController
-before_filter :authorize, :except => :login
+## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
+before_filter :authorize
   
   # GET /phones
   # GET /phones.xml

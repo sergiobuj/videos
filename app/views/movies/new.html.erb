@@ -1,5 +1,6 @@
 <h1>New movie</h1>
-
+<DIV ALIGN=CENTER>
+<%= javascript_include_tag "prototype" %>
 <%= error_messages_for :movie %>
 
 <% form_for(@movie) do |f| %>
@@ -45,19 +46,19 @@
 
   <p>
     <b>Category</b><br />
-    <%=
-        f.text_field :category_code
-    %>
-
+	<%=select_tag(':category_code',options_from_collection_for_select(@categories, :category_code, :category_name))%>
    </p>
 
-  
+   <p>
+    <b>Available</b><br />
+    <%= f.check_box :available %>
+  </p>
 
     
   <p>
     <%= f.submit "Create" %>
-    
+   
   </p>
 <% end %>
 
-<%= link_to 'Back', movies_path %>
+<%= link_to 'Back', movies_path %></DIV>

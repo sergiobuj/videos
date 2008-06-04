@@ -1,0 +1,30 @@
+<h1>Listing rents</h1>
+<DIV ALIGN=CENTER>
+<table>
+  <tr>
+    <th>Rent code</th>
+    <th>Movie code</th>
+    <th>Client code</th>
+    <th>Emp code</th>
+    <th>Rent date</th>
+    <th>Exp date</th>
+  </tr>
+
+<% for rent in @rents %>
+  <tr>
+    <td><%=h rent.rent_code %></td>
+    <td><%=h rent.movie_code %></td>
+    <td><%=h rent.client_code %></td>
+    <td><%=h rent.emp_code %></td>
+    <td><%=h rent.rent_date %></td>
+    <td><%=h rent.exp_date %></td>
+    <td><%= link_to 'Show', rent %></td>
+    <td><%= link_to 'Edit', edit_rent_path(rent) %></td>
+    <td><%= link_to 'Destroy', rent, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New rent', new_rent_path %></DIV>

@@ -1,7 +1,10 @@
 <h1>Login#list_users</h1>
+<DIV ALIGN=CENTER>
 <ul>
   <% for user in @all_users %>
-     <li><%= link_to "Delete ->" , { # link_to options
+     <li> <%= h(user.name) %>
+     
+     <%= link_to "	Delete" , { # link_to options
                                :controller => 'login',
                                :action => 'delete_user',
                                :id => user},
@@ -9,8 +12,10 @@
                                :method => :post,
                                :confirm => "Really delete #{user.name}?"
                              } %>
-         <%= h(user.name) %>
+         
      </li>
   <% end %>
 </ul>
+<p>
 |  <%= link_to "Back" , :controller => 'login', :action => 'index' %> |
+</p></DIV>
