@@ -49,8 +49,17 @@
   <%=h @movie.available %>
 </p>
 
+<% unless @cast.zero? %>
+<p>
+  <b>Cast:</b>
+</p>
+<% end %>
+<% for cast in @cast%>
+<p><%=h cast.actor_actress_name %></p>
+<% end %>
+
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %> |</DIV>
+<%= link_to 'Back', movies_path %> </DIV>
 
 

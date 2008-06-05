@@ -1,13 +1,15 @@
-<h1>Listing casts</h1>
-
+<h1>Listing casts </h1>
+<% for themovie in @movie %>
+<%=h themovie.movie_title %>
+<% end %>
 <table>
   <tr>
     <th>Movie code</th>
     <th>Actor actress name</th>
   </tr>
-
+<tr>
 <% for cast in @casts %>
-  <tr>
+  
     <td><%=h cast.movie_code %></td>
     <td><%=h cast.actor_actress_name %></td>
     <td><%= link_to 'Show', cast %></td>
@@ -19,4 +21,6 @@
 
 <br />
 
-<%= link_to 'New cast', new_cast_path %>
+| <%= link_to "Movies" , :controller => 'movies', :action => 'index'%> 
+| <%= link_to "Movie" , :controller => 'movies', :action => 'show', :id => themovie.id %> |
+<%= link_to "Add new" , :controller => 'casts', :action => 'new', :movie_code => themovie.movie_code %> |

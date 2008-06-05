@@ -29,15 +29,20 @@
     <td><%=h movie.available %></td>
     <td><%= link_to 'Show', movie %></td>
     <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+    <td><%= link_to "Movie Cast" , :controller => 'casts', :action => 'index', :movie_code => movie.movie_code %></td>
     <td><%= link_to 'Destroy', movie, :confirm => "Delete movie?", :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
+<% for cast in @cast%>
+<td><%=h cast.actor_actress_name %></td>
+
+<% end %>
 
 
 
 
-<%= link_to "search Movies" , :controller => 'movies', :action => 'search' %>
+
 |  <%= link_to "Back to Main" , :controller => 'login', :action => 'index' %> | <%= link_to 'New movie', new_movie_path %> |  <%= link_to "Available Movies" , :controller => 'movies', :action => 'av' %> |<%= link_to "Categories" , :controller => 'categories', :action => 'index' %> |
 </DIV>

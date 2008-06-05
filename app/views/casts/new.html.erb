@@ -4,8 +4,10 @@
 <% form_for(@cast) do |f| %>
 
   <p>
-    <b>Movie code</b>
-    <%= f.text_field :movie_code %>
+    <b><%= @movie.movie_title %></b></p>
+
+  <p>
+    <%= f.hidden_field :movie_code %>
 
     <b>Actor actress name</b>
     <%= f.text_field :actor_actress_name %>
@@ -16,5 +18,5 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', casts_path %>
+<%= link_to "Back" , :controller => 'casts', :action => 'index', :movie_code => @cast.movie_code %>
 

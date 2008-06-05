@@ -4,11 +4,12 @@ before_filter :authorize
   # GET /casts
   # GET /casts.xml
   def index
-    @casts = Cast.find(:all)
-
+    @casts = Cast.find_all_by_movie_code(params[ :movie_code])
+    @movie = Movie.find_all_by_movie_code(params[ :movie_code])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @casts }
+    
     end
   end
 
@@ -25,8 +26,9 @@ before_filter :authorize
   # GET /casts/new
   # GET /casts/new.xml
   def new
-  @movie
+    @movie = Movie.find_by_movie_code(params[ :movie_code])
     @cast = Cast.new
+    @cast.movie_code = @movie.movie_code
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @cast }
@@ -71,14 +73,21 @@ before_filter :authorize
     end
   end
 
+
+
   # DELETE /casts/1
   # DELETE /casts/1.xml
   def destroy
     @cast = Cast.find(params[:id])
+    @movie = Movie.find_by_movie_code(@cast.movie_code)
     @cast.destroy
     respond_to do |format|
-      format.html { redirect_to(casts_url) }
+      format.html { redirect_to(:controller => 'casts',:action=>'index',:movie_code=>@movie.movie_code) }
       format.xml  { head :ok }
     end
   end
+  
+  
+  
+  
 end

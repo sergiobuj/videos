@@ -22,6 +22,7 @@ before_filter :authorize
   # GET /movies/1.xml
   def show
     @movie = Movie.find(params[:id])
+    @cast = Cast.find_all_by_movie_code(@movie.movie_code)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @movie }

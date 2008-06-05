@@ -10,4 +10,4 @@
 
 
 <%= link_to 'Edit', edit_cast_path(@cast) %> |
-<%= link_to "Back" , :controller => 'casts', :action => 'index', :movie_code => @cast.movie_code %>
+<%= link_to 'Back', index_cast_path(@cast.movie_code) %>

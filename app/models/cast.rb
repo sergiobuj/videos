@@ -1,10 +1,7 @@
 class Cast < ActiveRecord::Base
 validates_presence_of :movie_code,:actor_actress_name
 validates_numericality_of :movie_code
-
 validate :valid_movie_code
-validates_uniqueness_of :movie_code
-
 belongs_to :movie, :dependent => :destroy
 
 
