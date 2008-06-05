@@ -27,8 +27,7 @@
     <td><%=h movie.place_in_store %></td>
     <td><%=h movie.category_code %></td>
     <td><%=h movie.available %></td>
-    <td><%= link_to 'Show', movie %></td>
-    <td><%= link_to "Movie Cast" , :controller => 'casts', :action => 'index', :movie_code => movie.movie_code %></td>
+
   </tr>
 <% end %>
 </table>
