@@ -35,7 +35,7 @@ before_filter :authorize
   # GET /movies/new.xml
   def new
     @movie = Movie.new
-    @categories = Category.find(:all)
+    @categories = Category.find(:all)    
     @category = Category
     if @category.count.zero?
     	redirect_to(Category.new)

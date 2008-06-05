@@ -1,5 +1,5 @@
 <h1>Editing movie</h1>
-
+<DIV ALIGN=CENTER>
 <%= error_messages_for :movie %>
 
 <% form_for(@movie) do |f| %>
@@ -48,7 +48,7 @@
     
     <select>
    <% @categories.each do |category| %>
-       <option <%= category.category_name %> 
+       <option> <%= category.category_name %> 
        </option>
    <% end %>
   </select>
@@ -67,4 +67,4 @@
 <% end %>
 
 <%= link_to 'Show', @movie %> |
-<%= link_to 'Back', movies_path %>
+<%= link_to 'Back', movies_path %></DIV>

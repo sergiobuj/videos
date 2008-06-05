@@ -8,7 +8,7 @@ before_filter :authorize
   # GET /movies.xml
   def index
     @movies = Movie.find(:all)
-    @movies = Movie.find_all_by_category_code(1)
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @movies }
@@ -36,7 +36,14 @@ before_filter :authorize
   def new
     @movie = Movie.new
     @categories = Category.find(:all)
+    
+    
     @category = Category
+    
+    for a in 1...@category.count
+	@string += @category.find(1).category_name
+    end
+    
     if @category.count.zero?
     	redirect_to(Category.new)
     	flash[:notice] = 'At least one category has to be created'
