@@ -15,7 +15,7 @@
     <td><%=h category.rent_days %></td> <td>
     <td><%= link_to 'Show', category %></td>
     <td><%= link_to 'Edit', edit_category_path(category) %></td>
-    <td><%= link_to "Movies in this category" , :controller => 'movies', :action => 'ca', category.category_code => (h category.category_code) %></td>
+    <td><%= link_to "Movies in this category" , :controller => 'movies', :action => 'showincategory', :category_code => category.category_code %></td>
     <td><%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

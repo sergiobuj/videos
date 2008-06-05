@@ -4,8 +4,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :availables
 
   map.resources :categories
-  map.resources :movies, :collection => { :av => :get}
-  map.resources :movies, :collection => { :ca => :get}
+ 
+  map.resources :movies, :collection => {:showincategory => :get, :av => :get}
   map.resources :movies
 
   map.resources :returns

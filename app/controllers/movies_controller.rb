@@ -8,6 +8,7 @@ before_filter :authorize
   # GET /movies.xml
   def index
     @movies = Movie.find(:all)
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @movies }
@@ -104,16 +105,9 @@ before_filter :authorize
    # @movie = Movie.find(:all, :conditions => ["movie.category_code = ?" "#{@category.category_code}"])
    #<td><%= link_to "Movies in this category" , :controller => 'movies', :action => 'ca', :category_id => category.id %></td>
    #@movies = Movie.find(:all)
-   #@movie = Movie.find(:all,  :conditions => ["category_code = ?","#{@category.category_code}"] )
-   def ca
-      #@category = Category.find_all_by_id(['id=?',@ca])
-      @movies = Movie.find_all_by_category_code(@ca)#(:category_code['#{:category.category_code}' )
-      respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @movies }
-    end
-   end
-  
+   #@movie = Movie.find(:all,  :conditions => ["category_code = ?","#{@category.category_code}"] )#(:category_code['#{:category.category_code}' )
+#(:category_code['#{:category.category_code}' )
+
    def av      
       @movies = Movie.find_all_by_available(true)#(:category_code['#{:category.category_code}' )
       respond_to do |format|
@@ -121,5 +115,15 @@ before_filter :authorize
       format.xml  { render :xml => @movies }
     end
    end
+   
+   def showincategory
+    @movies = Movie.find_all_by_category_code(params[:category_code])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @movies }
+    end  
+   end
+   
+   
   
 end

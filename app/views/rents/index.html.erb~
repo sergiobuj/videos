@@ -26,5 +26,5 @@
 </table>
 
 <br />
-
-<%= link_to 'New rent', new_rent_path %></DIV>
+|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> | <%= link_to 'New rent', new_rent_path %> | <%= link_to "Returns" , :controller => 'returns', :action => 'index' %> |
+</DIV>
