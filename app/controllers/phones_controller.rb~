@@ -4,10 +4,8 @@ before_filter :authorize
   
   # GET /phones
   # GET /phones.xml
-
-  
   def index
-    @phones = Phone.find(:all)
+    @phones = Phone.find_all_by_code_person(params[ :code_person])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @phones }
@@ -18,7 +16,6 @@ before_filter :authorize
   # GET /phones/1.xml
   def show
     @phone = Phone.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @phone }
@@ -28,8 +25,11 @@ before_filter :authorize
   # GET /phones/new
   # GET /phones/new.xml
   def new
+    @person = Client.find_by_client_id(params[:person_id])# unless @persona.nil?
+    #@persone = Employee.find_by_emp_id(params[:person_id]) unless @persona.nil?
     @phone = Phone.new
-    @phone.person_code(params[:code_person])
+    @phone.code_person = @person.client_id# unless @persona.nil?
+    #@phone.code_person = @persone.emp_id unless @persona.nil?
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @phone }
@@ -44,8 +44,7 @@ before_filter :authorize
   # POST /phones
   # POST /phones.xml
   def create
-    @phone = Phone.build(params[:phone])
-
+    @phone = Phone.new(params[:phone])
     respond_to do |format|
       if @phone.save
         flash[:notice] = 'Phone was successfully created.'
@@ -62,7 +61,6 @@ before_filter :authorize
   # PUT /phones/1.xml
   def update
     @phone = Phone.find(params[:id])
-
     respond_to do |format|
       if @phone.update_attributes(params[:phone])
         flash[:notice] = 'Phone was successfully updated.'
@@ -80,7 +78,6 @@ before_filter :authorize
   def destroy
     @phone = Phone.find(params[:id])
     @phone.destroy
-
     respond_to do |format|
       format.html { redirect_to(phones_url) }
       format.xml  { head :ok }

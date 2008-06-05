@@ -35,5 +35,5 @@
 
 <br />
 
-|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> | <%= link_to 'New movie', new_movie_path %> |  <%= link_to "Available Movies" , :controller => 'movies', :action => 'av' %> |<%= link_to "Categories" , :controller => 'categories', :action => 'index' %> |
+|  <%= link_to "Back to Main" , :controller => 'login', :action => 'index' %> | <%= link_to 'New movie', new_movie_path %> |  <%= link_to "Available Movies" , :controller => 'movies', :action => 'av' %> |<%= link_to "Categories" , :controller => 'categories', :action => 'index' %> |
 </DIV>

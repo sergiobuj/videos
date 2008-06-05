@@ -5,11 +5,13 @@
     <legend>Please Log In</legend>
     <% form_tag do %>
        <p>
-         <label for="name">Username:</label>
+         <label for="name">Username:</label></p>
+       <p>
          <%= text_field_tag :name, params[:name] %>
        </p>
        <p>
-         <label for="password">User password:</label>
+         <label for="password">User password:</label></p>
+       <p>
          <%= password_field_tag :password, params[:password] %>
        </p>
        <p>

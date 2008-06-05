@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
 ## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
-before_filter :authorize
+before_filter :authorize ,:except => [:search_temp , :av_temp]
     auto_complete_for :movie, :movie_title
   
   
@@ -118,6 +118,14 @@ before_filter :authorize
     end
    end
    
+   def av_temp
+      @movies = Movie.find_all_by_available(true)#(:category_code['#{:category.category_code}' )
+      respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @movies }
+    end
+   end
+   
    def showincategory
     @movies = Movie.find_all_by_category_code(params[:category_code])
     if @movies.size.zero?
@@ -129,6 +137,22 @@ before_filter :authorize
     end  
    end
 end
+
+
+
+
+  def search_temp
+    @movies = Movie.find(:all)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @movies }
+    end
+    
+  end
+
+
+
 
   
 end

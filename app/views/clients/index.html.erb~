@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Client code</th>
-    <th>Client</th>
+    <th>Client id</th>
     <th>Client name</th>
     <th>Client surname</th>
     <th>Sing up date</th>
@@ -23,8 +23,12 @@
     <td><%=h client.client_state %></td>
     <td><%=h client.home_address %></td>
     <td><%= link_to 'Show', client %></td>
+    <td><%= link_to "Rented Movies" , :controller => 'rents', :action => 'rented', :client_code => client.client_code %></td>
+    <td><%= link_to "Phones" , :controller => 'Phones', :action => 'index', :person_id => client.client_id %></td>
     <td><%= link_to 'Edit', edit_client_path(client) %></td>
     <td><%= link_to 'Destroy', client, :confirm => 'Are you sure?', :method => :delete %></td>
+
+
   </tr>
 <% end %>
 </table>

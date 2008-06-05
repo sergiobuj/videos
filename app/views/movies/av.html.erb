@@ -28,6 +28,7 @@
     <td><%=h movie.available %></td>
     <td><%= link_to 'Show', movie %></td>
     <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+    <td><%= link_to "Movie Cast" , :controller => 'casts', :action => 'index', :movie_code => movie.movie_code %></td>
     <td><%= link_to 'Destroy', movie, :confirm => "Delete movie?", :method => :delete %></td>
   </tr>
 <% end %>
