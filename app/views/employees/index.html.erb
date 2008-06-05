@@ -21,6 +21,7 @@
     <td><%=h employee.start_date %></td>
     <td><%=h employee.home_address %></td>
     <td><%= link_to 'Show', employee %></td>
+        <td><%= link_to "Registered Rents" , :controller => 'rents', :action => 'rentedemp', :emp_code => employee.emp_code %></td>
     <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
     <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

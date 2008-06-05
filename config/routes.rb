@@ -9,7 +9,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :movies
 
   map.resources :returns
-
+  
+  map.resources :rents, :collection =>{:rented => :get,:rentedemp => :get}
   map.resources :rents
 
   map.resources :employees

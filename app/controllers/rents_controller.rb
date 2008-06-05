@@ -92,4 +92,23 @@ before_filter :authorize
       format.xml  { head :ok }
     end
   end
+  
+  
+  def rented
+    @rents = Rent.find_all_by_client_code(params[:client_code])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @rents }
+    end
+  end
+    def rentedemp
+    @rents = Rent.find_all_by_emp_code(params[:emp_code])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @rents }
+    end
+  end
+  
+  
+  
 end

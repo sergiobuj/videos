@@ -49,6 +49,9 @@ before_filter :authorize
 
     respond_to do |format|
       if @rent.save
+              @movie = Movie.find_by_movie_code(@rent.movie_code)
+        @movie.available=false
+        @movie.save
         flash[:notice] = 'Rent was successfully created.'
         format.html { redirect_to(@rent) }
         format.xml  { render :xml => @rent, :status => :created, :location => @rent }
@@ -89,4 +92,23 @@ before_filter :authorize
       format.xml  { head :ok }
     end
   end
+  
+  
+  def rented
+    @rents = Rent.find_all_by_client_code(params[:client_code])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @rents }
+    end
+  end
+    def rentedemp
+    @rents = Rent.find_all_by_emp_code(params[:client_code])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @rents }
+    end
+  end
+  
+  
+  
 end
