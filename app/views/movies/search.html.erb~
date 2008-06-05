@@ -1,0 +1,16 @@
+<% if @items && @items.length > 0 %>
+  <ul id="searchResults">
+  <% for movie in @items %>
+    <li>
+      <%= link_to
+        highlight(movie.movie_title, @mark_term) : h(movie.movie_title),
+        :controller => "movies",
+   
+    </li>
+  <% end %>
+  </ul>
+<% elsif @mark_term && @mark_term.length > 0 %>
+  No Results
+<% else %>
+  &nbsp;
+<% end %>

@@ -1,6 +1,6 @@
 <DIV ALIGN=CENTER>
 <p><b>Renta de Videos</b></p>
-<p><b>Principal</b></p>
+<p><b>Página Principal</b></p>
 
 <p><b>|  
     <%= link_to "Rents" , :controller => 'rents', :action => 'index' %> |
@@ -20,6 +20,7 @@
 
 <p><b>|
   <%= link_to "Movies list" , :controller => 'movies', :action => 'index' %> | 
+  <%= link_to "Movies Search" , :controller => 'movies', :action => 'live_search' %> | 
   <%= link_to "Movie Categories" , :controller => 'categories', :action => 'index' %> | </b>
 </p>
 <p> 

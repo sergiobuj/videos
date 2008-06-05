@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :categories
  
-  map.resources :movies, :collection => {:showincategory => :get, :av => :get}
+  map.resources :movies, :collection => {:showincategory => :get, :av => :get }
   map.resources :movies
 
   map.resources :returns

@@ -35,15 +35,8 @@ before_filter :authorize
   # GET /movies/new.xml
   def new
     @movie = Movie.new
-    @categories = Category.find(:all)
-    
-    
+    @categories = Category.find(:all)    
     @category = Category
-    
-    for a in 1...@category.count
-	@string += @category.find(1).category_name
-    end
-    
     if @category.count.zero?
     	redirect_to(Category.new)
     	flash[:notice] = 'At least one category has to be created'
@@ -131,6 +124,17 @@ before_filter :authorize
     end  
    end
    
-   
+    def search
+    if 0 == @params['criteria'].length
+      @items = nil
+    else
+      @items = Movie.find(:all, :order_by => 'movie_title',
+        :conditions => [ 'LOWER(content) LIKE ?',
+        '%' + @params['criteria'].downcase + '%' ])
+      #@mark_term = @params['criteria']
+    end
+    render_without_layout
+  end
+
   
 end

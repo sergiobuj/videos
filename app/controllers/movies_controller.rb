@@ -123,7 +123,7 @@ before_filter :authorize
       format.xml  { render :xml => @movies }
     end  
    end
-   
-   
+
+
   
 end

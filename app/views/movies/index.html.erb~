@@ -33,7 +33,27 @@
 <% end %>
 </table>
 
+
+
+ <%= javascript_include_tag :defaults %>  
+
+<h1>Search movies</h1>
+<DIV ALIGN=CENTER>
+ <input type="text" id="search" name="search" />
+   <div id="searchResults"></div>
+    <%= observe_field 'search',
+    :frequency => 0.5,
+    :update => 'searchResults',
+    :url => { :controller => 'movies', :action=> 'search' },
+    :with => :criteria => search.text,
+    :loading => "document.getElementById('busy').
+      style.display='inline'",
+    :loaded => "document.getElementById('busy').
+      style.display='none'" %>
+</DIV>
 <br />
 
-|  <%= link_to "Back" , :controller => 'login', :action => 'index' %> | <%= link_to 'New movie', new_movie_path %> |  <%= link_to "Available Movies" , :controller => 'movies', :action => 'av' %> |<%= link_to "Categories" , :controller => 'categories', :action => 'index' %> |
+
+<%= link_to "search Movies" , :controller => 'movies', :action => 'search' %>
+|  <%= link_to "Back to Main" , :controller => 'login', :action => 'index' %> | <%= link_to 'New movie', new_movie_path %> |  <%= link_to "Available Movies" , :controller => 'movies', :action => 'av' %> |<%= link_to "Categories" , :controller => 'categories', :action => 'index' %> |
 </DIV>
