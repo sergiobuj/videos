@@ -49,6 +49,9 @@ before_filter :authorize
 
     respond_to do |format|
       if @rent.save
+              @movie = Movie.find_by_movie_code(@rent.movie_code)
+        @movie.available=false
+        @movie.save
         flash[:notice] = 'Rent was successfully created.'
         format.html { redirect_to(@rent) }
         format.xml  { render :xml => @rent, :status => :created, :location => @rent }

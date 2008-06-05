@@ -8,6 +8,7 @@
     <th>Emp code</th>
     <th>Rent date</th>
     <th>Exp date</th>
+    <th>Alive</th>
   </tr>
 
 <% for rent in @rents %>
@@ -18,6 +19,7 @@
     <td><%=h rent.emp_code %></td>
     <td><%=h rent.rent_date %></td>
     <td><%=h rent.exp_date %></td>
+    <td><%=h rent.alive %></td>
     <td><%= link_to 'Show', rent %></td>
     <td><%= link_to 'Edit', edit_rent_path(rent) %></td>
     <td><%= link_to 'Destroy', rent, :confirm => 'Are you sure?', :method => :delete %></td>

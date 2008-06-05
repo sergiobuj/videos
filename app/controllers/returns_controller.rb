@@ -30,7 +30,6 @@ before_filter :authorize
   # GET /returns/new.xml
   def new
     @return = Return.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @return }
@@ -46,7 +45,12 @@ before_filter :authorize
   # POST /returns.xml
   def create
     @return = Return.new(params[:return])
-
+    @rent = Rent.find_by_rent_code(@return.rent_code)
+    @movie = Movie.find_by_movie_code(@rent.movie_code)
+    @movie.available=true
+    @movie.save
+    @rent.alive =false
+    @rent.save
     respond_to do |format|
       if @return.save
         flash[:notice] = 'Return was successfully created.'

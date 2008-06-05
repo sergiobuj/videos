@@ -7,17 +7,19 @@
 <p>
   <b>Movie code:</b>
   <%=h @rent.movie_code %>
-  <%=h @movie%>
+   <%=  @movie%>
 </p>
 
 <p>
   <b>Client code:</b>
   <%=h @rent.client_code %>
+    <%=h @client%>
 </p>
 
 <p>
   <b>Emp code:</b>
   <%=h @rent.emp_code %>
+    <%=h @emp%>
 </p>
 
 <p>

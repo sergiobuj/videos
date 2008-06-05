@@ -1,0 +1,9 @@
+class AddAliveToRent < ActiveRecord::Migration
+  def self.up
+    add_column :rents, :alive, :boolean
+  end
+
+  def self.down
+    remove_column :rents, :alive
+  end
+end

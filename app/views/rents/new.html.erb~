@@ -16,12 +16,12 @@
 
   <p>
     <b>Client</b><br />
-    <%=f.collection_select :client_code,Client.find(:all),:client_id,:client_id %>
+    <%=f.collection_select :client_code,Client.find(:all),:client_code,:client_name && :client_id %>
   </p>
 
   <p>
-    <b>Employee</b><br />
-    <%=f.collection_select :emp_code,Employee.find(:all),:emp_id, :emp_id %>
+    <b>Emp code</b><br />
+    <%=f.collection_select :emp_code,Employee.find(:all),:emp_code,:emp_name && :emp_id %>
   </p>
 
   <p>

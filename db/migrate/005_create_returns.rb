@@ -3,7 +3,8 @@ class CreateReturns < ActiveRecord::Migration
     create_table :returns do |t|
       t.integer :rent_code
       t.date :return_date
-      t.integer :charges
+      t.integer :charges ,     :default => 0
+
 
       t.timestamps
       rename_table :return, :r_eturn

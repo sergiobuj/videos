@@ -35,7 +35,6 @@ before_filter :authorize
      ## @movie = Movie.find(params :)
 
     end
-    'changeav'#, :movie_code => @rent.movie_code
   end
 
   # GET /rents/1/edit
@@ -77,12 +76,6 @@ before_filter :authorize
     end
   end
 
-
-  def changeav
-    @movie = Movie.find(params[@rent.movie_code])
-    @movie.available=false
-    @movie.save
-  end
 
 
   # DELETE /rents/1
