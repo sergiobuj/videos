@@ -16,7 +16,7 @@ class RentsController < ApplicationController
   # GET /rents/1.xml
   def show
     @rent = Rent.find(params[:id])
-
+@movie = Ren
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @rent }

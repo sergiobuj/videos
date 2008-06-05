@@ -1,3 +1,4 @@
+<DIV ALIGN=CENTER>
 <p>
   <b>Rent code:</b>
   <%=h @rent.rent_code %>
@@ -6,6 +7,7 @@
 <p>
   <b>Movie code:</b>
   <%=h @rent.movie_code %>
+  <%=h Movie.find_by_movie_code(@movie).movie_title%>
 </p>
 
 <p>
@@ -30,4 +32,4 @@
 
 
 <%= link_to 'Edit', edit_rent_path(@rent) %> |
-<%= link_to 'Back', rents_path %>
+<%= link_to 'Back', rents_path %></DIV>
