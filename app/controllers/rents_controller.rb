@@ -27,6 +27,8 @@ class RentsController < ApplicationController
   # GET /rents/new.xml
   def new
     @rent = Rent.new
+    @movies = Movie.find(:all)    
+    @movie = Movie
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @rent }

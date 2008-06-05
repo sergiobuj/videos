@@ -1,5 +1,5 @@
 <h1>New rent</h1>
-
+<DIV ALIGN=CENTER>
 <%= error_messages_for :rent %>
 
 <% form_for(@rent) do |f| %>
@@ -10,12 +10,13 @@
 
   <p>
     <b>Movie code</b><br />
-    <%= f.text_field :movie_code %>
+    <%=f.collection_select :movie_code,Movie.find_all_by_available(true),:movie_code,:movie_title %>
+
   </p>
 
   <p>
-    <b>Client code</b><br />
-    <%= f.text_field :client_code %>
+    <b>Client</b><br />
+    <%=f.collection_select :client_code,Client.find(:all),:client_code,:client_name && :client_id %>
   </p>
 
   <p>
@@ -38,4 +39,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', rents_path %>
+<%= link_to 'Back', rents_path %></DIV>

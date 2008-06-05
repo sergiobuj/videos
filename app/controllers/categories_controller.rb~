@@ -4,8 +4,7 @@ before_filter :authorize
   # GET /categories
   # GET /categories.xml
   def index
-    @categories = Category.find(:all)
-@total_movies = Movie.count
+    @categories = Category.find(:all, :include => :movies)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @categories }

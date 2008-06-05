@@ -10,17 +10,18 @@
 
   <p>
     <b>Movie code</b><br />
-    <%= f.text_field :movie_code %>
+    <%=f.collection_select :movie_code,Movie.find_all_by_available(true),:movie_code,:movie_title %>
+
   </p>
 
   <p>
-    <b>Client code</b><br />
-    <%= f.text_field :client_code %>
+    <b>Client</b><br />
+    <%=f.collection_select :client_code,Client.find(:all),:client_code,:client_name && :client_id %>
   </p>
 
   <p>
     <b>Emp code</b><br />
-    <%= f.text_field :emp_code %>
+    <%=f.collection_select :emp_code,Employee.find(:all),:emp_code,:emp_name && :emp_id %>
   </p>
 
   <p>

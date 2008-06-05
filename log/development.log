@@ -45618,3 +45618,2048 @@ Completed in 0.02950 (33 reqs/sec) | Rendering: 0.00788 (26%) | DB: 0.00130 (4%)
   [4;36;1mSQL (0.000091)[0m   [0;1mPRAGMA index_list(rents)[0m
   [4;35;1mSQL (0.000098)[0m   [0mPRAGMA index_list(returns)[0m
   [4;36;1mSQL (0.000089)[0m   [0;1mPRAGMA index_list(users)[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 00:02:10) [GET]
+  Session ID: 3f44f9a3c32292cf4e27e9ca533ba14c
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000216)[0m   [0;1mSELECT * FROM users WHERE (users."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/login/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0xb7576860 @filter=:authorize>] rendered_or_redirected.
+Completed in 0.01292 (77 reqs/sec) | DB: 0.00022 (1%) | 302 Found [http://localhost/movies]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-05 00:02:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsGOgtub3RpY2UiEWxvZyBpbiBmaXJzdAY6CkB1c2VkewY7BlQ%3D--b3ee68c4feb0e9a634b21eda5e0d57fc93bc1b79
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering login/login
+Completed in 0.00785 (127 reqs/sec) | Rendering: 0.00399 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-06-05 00:02:16) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWQwIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz%0AaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--3365401eed0db8073943ffaa7d7a02de1024890f
+  Parameters: {"name"=>"admin", "commit"=>"Login", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"login", "controller"=>"login", "password"=>"admin"}
+  [4;35;1mUser Load (0.000431)[0m   [0mSELECT * FROM users WHERE (users."name" = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 0.01692 (59 reqs/sec) | DB: 0.00043 (2%) | 302 Found [http://localhost/login/login]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-05 00:02:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000418)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mSQL (0.000387)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000230)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.07078 (14 reqs/sec) | Rendering: 0.01130 (15%) | DB: 0.00237 (3%) | 200 OK [http://localhost/login]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 00:02:18) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000415)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000648)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.03514 (28 reqs/sec) | Rendering: 0.01422 (40%) | DB: 0.00106 (3%) | 200 OK [http://localhost/movies]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 00:02:23) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.000385)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load Including Associations (0.000000)[0m   [0mSQLite3::SQLException: no such column: movies.category_id: SELECT categories."id" AS t0_r0, categories."category_code" AS t0_r1, categories."rent_price" AS t0_r2, categories."rent_days" AS t0_r3, categories."created_at" AS t0_r4, categories."updated_at" AS t0_r5, categories."category_name" AS t0_r6, movies."id" AS t1_r0, movies."movie_code" AS t1_r1, movies."movie_title" AS t1_r2, movies."movie_original_title" AS t1_r3, movies."movie_year" AS t1_r4, movies."movie_director" AS t1_r5, movies."genre" AS t1_r6, movies."country" AS t1_r7, movies."place_in_store" AS t1_r8, movies."category_code" AS t1_r9, movies."created_at" AS t1_r10, movies."updated_at" AS t1_r11, movies."available" AS t1_r12 FROM categories LEFT OUTER JOIN movies ON movies.category_id = categories.id [0m
+
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: movies.category_id: SELECT categories."id" AS t0_r0, categories."category_code" AS t0_r1, categories."rent_price" AS t0_r2, categories."rent_days" AS t0_r3, categories."created_at" AS t0_r4, categories."updated_at" AS t0_r5, categories."category_name" AS t0_r6, movies."id" AS t1_r0, movies."movie_code" AS t1_r1, movies."movie_title" AS t1_r2, movies."movie_original_title" AS t1_r3, movies."movie_year" AS t1_r4, movies."movie_director" AS t1_r5, movies."genre" AS t1_r6, movies."country" AS t1_r7, movies."place_in_store" AS t1_r8, movies."category_code" AS t1_r9, movies."created_at" AS t1_r10, movies."updated_at" AS t1_r11, movies."available" AS t1_r12 FROM categories  LEFT OUTER JOIN movies ON movies.category_id = categories.id   ):
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract_adapter.rb:150:in `log'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:345:in `catch_schema_changes'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:256:in `select'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:53:in `select_all'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:74:in `cache_sql'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:53:in `select_all'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1242:in `select_all_rows'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1124:in `find_with_associations'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1122:in `catch'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1122:in `find_with_associations'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:1232:in `find_every'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:503:in `find'
+    /app/controllers/categories_controller.rb:7:in `index'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 00:03:33) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.000404)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load Including Associations (0.000000)[0m   [0mSQLite3::SQLException: no such column: movies.category_id: SELECT categories."id" AS t0_r0, categories."category_code" AS t0_r1, categories."rent_price" AS t0_r2, categories."rent_days" AS t0_r3, categories."created_at" AS t0_r4, categories."updated_at" AS t0_r5, categories."category_name" AS t0_r6, movies."id" AS t1_r0, movies."movie_code" AS t1_r1, movies."movie_title" AS t1_r2, movies."movie_original_title" AS t1_r3, movies."movie_year" AS t1_r4, movies."movie_director" AS t1_r5, movies."genre" AS t1_r6, movies."country" AS t1_r7, movies."place_in_store" AS t1_r8, movies."category_code" AS t1_r9, movies."created_at" AS t1_r10, movies."updated_at" AS t1_r11, movies."available" AS t1_r12 FROM categories LEFT OUTER JOIN movies ON movies.category_id = categories.id [0m
+
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: movies.category_id: SELECT categories."id" AS t0_r0, categories."category_code" AS t0_r1, categories."rent_price" AS t0_r2, categories."rent_days" AS t0_r3, categories."created_at" AS t0_r4, categories."updated_at" AS t0_r5, categories."category_name" AS t0_r6, movies."id" AS t1_r0, movies."movie_code" AS t1_r1, movies."movie_title" AS t1_r2, movies."movie_original_title" AS t1_r3, movies."movie_year" AS t1_r4, movies."movie_director" AS t1_r5, movies."genre" AS t1_r6, movies."country" AS t1_r7, movies."place_in_store" AS t1_r8, movies."category_code" AS t1_r9, movies."created_at" AS t1_r10, movies."updated_at" AS t1_r11, movies."available" AS t1_r12 FROM categories  LEFT OUTER JOIN movies ON movies.category_id = categories.id   ):
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract_adapter.rb:150:in `log'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:345:in `catch_schema_changes'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:132:in `execute'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/sqlite_adapter.rb:256:in `select'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:53:in `select_all'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:74:in `cache_sql'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:53:in `select_all'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1242:in `select_all_rows'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1124:in `find_with_associations'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1122:in `catch'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations.rb:1122:in `find_with_associations'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:1232:in `find_every'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/base.rb:503:in `find'
+    /app/controllers/categories_controller.rb:7:in `index'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#av (for 127.0.0.1 at 2008-06-05 00:33:06) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"av", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000371)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000568)[0m   [0mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+Rendering template within layouts/movies
+Rendering movies/av
+Completed in 0.03063 (32 reqs/sec) | Rendering: 0.00763 (24%) | DB: 0.00094 (3%) | 200 OK [http://localhost/movies/av]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 00:33:08) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000393)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000632)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.02925 (34 reqs/sec) | Rendering: 0.00785 (26%) | DB: 0.00102 (3%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:33:09) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000380)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000475)[0m   [0mSELECT * FROM categories [0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+  [4;35;1mSQL (0.000971)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000864)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000887)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000876)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+ActionView::TemplateError (undefined local variable or method `category_id' for #<ActionView::Base:0xb593bda8>) on line #51 of movies/new.html.erb:
+48:     <b>Category</b><br />
+49: 	<!--<%=@select = select_tag(':category_code',options_from_collection_for_select(@categories, :category_code,:category_name))%>-->
+50: 	<%=f.text_field :category_code%>
+51: 	<%=check_box_tag "movie[category_code][]", category_id%>
+52: 	<%=%>
+53: 	
+54: 	
+
+    app/views/movies/new.html.erb:51:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:44:in `new'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:44:24) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000380)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000455)[0m   [0;1mSELECT * FROM categories [0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+  [4;36;1mSQL (0.000928)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000852)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000861)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000853)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+ActionView::TemplateError (undefined local variable or method `category_id' for #<ActionView::Base:0xb591d77c>) on line #51 of movies/new.html.erb:
+48:     <b>Category</b><br />
+49: 	<!--<%=@select = select_tag(':category_code',options_from_collection_for_select(@categories, :category_code,:category_name))%>-->
+50: 	<%=f.text_field :category_code%>
+51: 	<!--<%=check_box_tag "movie[category_code][]", category_id%>
+52: 	<%=%>-->
+53: 	
+54: 	<%=f.label :category_code%>
+
+    app/views/movies/new.html.erb:51:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:44:in `new'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:44:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000378)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000453)[0m   [0mSELECT * FROM categories [0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+
+
+ActionView::TemplateError (undefined method `name' for #<Category:0xb58adff8>) on line #54 of movies/new.html.erb:
+51: 
+52: 	
+53: 	<%=f.label :category_code%>
+54: 	<%=f.collection_select :category_code, @categories,:id,:name %>
+55: 	
+56: 	
+57:    </p>
+
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:181:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:181:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `map'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:366:in `to_collection_select_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:118:in `collection_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:413:in `collection_select'
+    app/views/movies/new.html.erb:54:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:44:in `new'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:45:12) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000386)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000487)[0m   [0;1mSELECT * FROM categories [0m
+  [4;35;1mSQL (0.000300)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.04205 (23 reqs/sec) | Rendering: 0.01144 (27%) | DB: 0.00117 (2%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:45:39) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000377)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000513)[0m   [0mSELECT * FROM categories [0m
+  [4;36;1mSQL (0.000237)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.11351 (8 reqs/sec) | Rendering: 0.01362 (11%) | DB: 0.00113 (0%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:46:02) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"8", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"1", "genre"=>"cinco", "place_in_store"=>"siete"}, "controller"=>"movies"}
+  [4;35;1mUser Load (0.000483)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000577)[0m   [0;1mSELECT * FROM movies WHERE (movies.movie_code = 1) LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map) on line #49 of movies/new.html.erb:
+46: 
+47:   <p>
+48:     <b>Category</b><br />
+49: 	<!--<%=@select = select_tag(':category_code',options_from_collection_for_select(@categories, :category_code,:category_name))%>-->
+50: 	
+51: 
+52: 	
+
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `options_from_collection_for_select'
+    app/views/movies/new.html.erb:49:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    app/controllers/movies_controller.rb:69:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:63:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:46:30) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"8", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"1", "genre"=>"cinco", "place_in_store"=>"siete"}, "controller"=>"movies"}
+  [4;35;1mUser Load (0.000391)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000581)[0m   [0;1mSELECT * FROM movies WHERE (movies.movie_code = 1) LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map) on line #53 of movies/new.html.erb:
+50: 
+51: 	
+52: 	<%=f.label :category_code%>
+53: 	<%=f.collection_select :category_code, @categories,:id,:category_name %>
+54: 	
+55: 	
+56:    </p>
+
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:366:in `to_collection_select_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:118:in `collection_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:413:in `collection_select'
+    app/views/movies/new.html.erb:53:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    app/controllers/movies_controller.rb:69:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:63:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:47:00) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"8", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"1", "genre"=>"cinco", "place_in_store"=>"siete"}, "controller"=>"movies"}
+  [4;35;1mUser Load (0.000409)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000605)[0m   [0;1mSELECT * FROM movies WHERE (movies.movie_code = 1) LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map) on line #53 of movies/new.html.erb:
+50: 
+51: 	
+52: 	<%=f.label :category_code%>
+53: 	<%=f.collection_select :category_code, @categories,:category_code,:category_name %>
+54: 	
+55: 	
+56:    </p>
+
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:366:in `to_collection_select_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:118:in `collection_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:413:in `collection_select'
+    app/views/movies/new.html.erb:53:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    app/controllers/movies_controller.rb:69:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:63:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:47:54) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000375)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000459)[0m   [0;1mSELECT * FROM categories [0m
+  [4;35;1mSQL (0.000234)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.04080 (24 reqs/sec) | Rendering: 0.01154 (28%) | DB: 0.00107 (2%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:47:58) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"1", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"1", "genre"=>"cinco", "place_in_store"=>"siete"}, "controller"=>"movies"}
+  [4;36;1mUser Load (0.000400)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000641)[0m   [0mSELECT * FROM movies WHERE (movies.movie_code = 1) LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map) on line #53 of movies/new.html.erb:
+50: 
+51: 	
+52: 	<%=f.label :category_code%>
+53: 	<%=f.collection_select :category_code, @categories,:category_code,:category_code %>
+54: 	
+55: 	
+56:    </p>
+
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:366:in `to_collection_select_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:118:in `collection_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:413:in `collection_select'
+    app/views/movies/new.html.erb:53:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    app/controllers/movies_controller.rb:69:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:63:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:48:46) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000393)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000476)[0m   [0mSELECT * FROM categories [0m
+  [4;36;1mSQL (0.000243)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.04185 (23 reqs/sec) | Rendering: 0.01095 (26%) | DB: 0.00111 (2%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:49:22) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000381)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000478)[0m   [0;1mSELECT * FROM categories [0m
+  [4;35;1mSQL (0.000240)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+
+
+ActionView::TemplateError (undefined method `#{:category_name}' for #<Category:0xb58c2b24>) on line #49 of movies/new.html.erb:
+46: 
+47:   <p>
+48:     <b>Category</b><br />
+49: 	<%=f.collection_select :category_code, @categories,:category_code,'#{:category_name}' %>
+50: 	
+51: 	
+52:    </p>
+
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:181:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:181:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `map'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:366:in `to_collection_select_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:118:in `collection_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:413:in `collection_select'
+    app/views/movies/new.html.erb:49:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:44:in `new'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:49:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000436)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000523)[0m   [0mSELECT * FROM categories [0m
+  [4;36;1mSQL (0.000297)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.04474 (22 reqs/sec) | Rendering: 0.01088 (24%) | DB: 0.00126 (2%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:49:54) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"1", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"1", "genre"=>"cinco", "place_in_store"=>"siete"}, "controller"=>"movies"}
+  [4;35;1mUser Load (0.000389)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000557)[0m   [0;1mSELECT * FROM movies WHERE (movies.movie_code = 1) LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map) on line #49 of movies/new.html.erb:
+46: 
+47:   <p>
+48:     <b>Category</b><br />
+49: 	<%=f.collection_select :category_code, @categories,:category_code,:category_name %>
+50: 	
+51: 	
+52:    </p>
+
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:366:in `to_collection_select_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:118:in `collection_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:413:in `collection_select'
+    app/views/movies/new.html.erb:49:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    app/controllers/movies_controller.rb:69:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:63:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:50:18) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000379)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000469)[0m   [0;1mSELECT * FROM categories [0m
+  [4;35;1mSQL (0.000237)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.04062 (24 reqs/sec) | Rendering: 0.01064 (26%) | DB: 0.00109 (2%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:50:19) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000389)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000482)[0m   [0mSELECT * FROM categories [0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+Completed in 0.03865 (25 reqs/sec) | Rendering: 0.00772 (19%) | DB: 0.00112 (2%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:50:24) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"1", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"1", "genre"=>"cinco", "place_in_store"=>"siete"}, "controller"=>"movies"}
+  [4;35;1mUser Load (0.000381)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000564)[0m   [0;1mSELECT * FROM movies WHERE (movies.movie_code = 1) LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map) on line #49 of movies/new.html.erb:
+46: 
+47:   <p>
+48:     <b>Category</b><br />
+49: 	<%=f.collection_select :category_code, @categories,:category_code,:category_name %>
+50: 	
+51: 	
+52:    </p>
+
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:180:in `options_from_collection_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:366:in `to_collection_select_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:118:in `collection_select'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_options_helper.rb:413:in `collection_select'
+    app/views/movies/new.html.erb:49:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/movies/new.html.erb:6:in `_run_erb_47app47views47movies47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    app/controllers/movies_controller.rb:69:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/movies_controller.rb:63:in `create'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:51:17) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000385)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000474)[0m   [0;1mSELECT * FROM categories [0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM categories [0m
+Completed in 0.04137 (24 reqs/sec) | Rendering: 0.01093 (26%) | DB: 0.00110 (2%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:51:18) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000383)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000528)[0m   [0;1mSELECT * FROM categories [0m
+  [4;35;1mSQL (0.000249)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM categories [0m
+Completed in 0.03780 (26 reqs/sec) | Rendering: 0.00805 (21%) | DB: 0.00116 (3%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:51:20) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"1", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"1", "genre"=>"cinco", "place_in_store"=>"siete"}, "controller"=>"movies"}
+  [4;35;1mUser Load (0.000395)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000575)[0m   [0;1mSELECT * FROM movies WHERE (movies.movie_code = 1) LIMIT 1[0m
+Rendering template within layouts/movies
+Rendering movies/new
+  [4;35;1mCategory Load (0.000486)[0m   [0mSELECT * FROM categories [0m
+Completed in 0.04214 (23 reqs/sec) | Rendering: 0.01443 (34%) | DB: 0.00146 (3%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:51:28) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"1", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"12", "genre"=>"cinco", "place_in_store"=>"siete"}, "controller"=>"movies"}
+  [4;36;1mUser Load (0.000392)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000239)[0m   [0mSELECT * FROM movies WHERE (movies.movie_code = 12) LIMIT 1[0m
+  [4;36;1mMovie Create (0.000550)[0m   [0;1mINSERT INTO movies ("movie_year", "updated_at", "available", "movie_title", "category_code", "movie_original_title", "country", "movie_director", "movie_code", "genre", "place_in_store", "created_at") VALUES(1999, '2008-06-05 00:51:28', 'f', 'dos', 1, 'tres', 'seis', 'cuatro', 12, 'cinco', 'siete', '2008-06-05 00:51:28')[0m
+Redirected to http://localhost:3000/movies/15
+Completed in 0.04175 (23 reqs/sec) | DB: 0.00118 (2%) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2008-06-05 00:51:28) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiIE1vdmll%0AIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7CVQ%3D--5ffa5f12204d16340dba0b363771646081e4e063
+  Parameters: {"action"=>"show", "id"=>"15", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000387)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000603)[0m   [0;1mSELECT * FROM movies WHERE (movies."id" = 15) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 0.09433 (10 reqs/sec) | Rendering: 0.00669 (7%) | DB: 0.00099 (1%) | 200 OK [http://localhost/movies/15]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 00:51:31) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000438)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000831)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.03267 (30 reqs/sec) | Rendering: 0.00808 (24%) | DB: 0.00127 (3%) | 200 OK [http://localhost/movies]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 00:51:38) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mUser Load (0.000378)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000479)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.03106 (32 reqs/sec) | Rendering: 0.00982 (31%) | DB: 0.00086 (2%) | 200 OK [http://localhost/categories]
+
+
+Processing MoviesController#showincategory (for 127.0.0.1 at 2008-06-05 00:51:42) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"category_code"=>"1", "action"=>"showincategory", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000405)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000822)[0m   [0;1mSELECT * FROM movies WHERE (movies."category_code" = '1') [0m
+Rendering template within layouts/movies
+Rendering movies/showincategory
+Completed in 0.03350 (29 reqs/sec) | Rendering: 0.00850 (25%) | DB: 0.00123 (3%) | 200 OK [http://localhost/movies/showincategory?category_code=1]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 00:52:55) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mUser Load (0.000403)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000570)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.02659 (37 reqs/sec) | Rendering: 0.00590 (22%) | DB: 0.00097 (3%) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2008-06-05 00:52:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"categories"}
+  [4;35;1mUser Load (0.000375)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 0.02683 (37 reqs/sec) | Rendering: 0.00626 (23%) | DB: 0.00038 (1%) | 200 OK [http://localhost/categories/new]
+
+
+Processing CategoriesController#create (for 127.0.0.1 at 2008-06-05 00:53:15) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"commit"=>"Create", "category"=>{"rent_days"=>"5", "category_name"=>"Clásica", "category_code"=>"2", "rent_price"=>"200"}, "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "controller"=>"categories"}
+  [4;36;1mUser Load (0.000451)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000229)[0m   [0mSELECT * FROM categories WHERE (categories.category_code = 2) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000152)[0m   [0;1mSELECT * FROM categories WHERE (categories.category_name = 'Clásica') LIMIT 1[0m
+  [4;35;1mCategory Create (0.000341)[0m   [0mINSERT INTO categories ("rent_days", "category_name", "updated_at", "category_code", "rent_price", "created_at") VALUES(5, 'Clásica', '2008-06-05 00:53:15', 2, 200, '2008-06-05 00:53:15')[0m
+Redirected to http://localhost:3000/categories/10
+Completed in 0.03250 (30 reqs/sec) | DB: 0.00117 (3%) | 302 Found [http://localhost/categories]
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2008-06-05 00:53:15) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJ0NhdGVn%0Ab3J5IHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRlZC4GOgpAdXNlZHsGOwlU--8f0b19175e2dabd792c59ac1e4481049459a7e82
+  Parameters: {"action"=>"show", "id"=>"10", "controller"=>"categories"}
+  [4;36;1mUser Load (0.000381)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000421)[0m   [0mSELECT * FROM categories WHERE (categories."id" = 10) [0m
+Rendering template within layouts/categories
+Rendering categories/show
+Completed in 0.02600 (38 reqs/sec) | Rendering: 0.00444 (17%) | DB: 0.00080 (3%) | 200 OK [http://localhost/categories/10]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 00:53:18) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;36;1mUser Load (0.000379)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000629)[0m   [0mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.02640 (37 reqs/sec) | Rendering: 0.00639 (24%) | DB: 0.00101 (3%) | 200 OK [http://localhost/categories]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 00:53:20) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000416)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000847)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.02995 (33 reqs/sec) | Rendering: 0.00824 (27%) | DB: 0.00126 (4%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#new (for 127.0.0.1 at 2008-06-05 00:53:23) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000384)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mCategory Load (0.000616)[0m   [0mSELECT * FROM categories [0m
+  [4;36;1mSQL (0.000243)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/new
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM categories [0m
+Completed in 0.03879 (25 reqs/sec) | Rendering: 0.00850 (21%) | DB: 0.00124 (3%) | 200 OK [http://localhost/movies/new]
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2008-06-05 00:54:13) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "movie"=>{"movie_year"=>"1880", "movie_title"=>"La Clásica", "available"=>"1", "movie_original_title"=>"The Classic", "category_code"=>"2", "country"=>"USA", "movie_director"=>"Old Director", "movie_code"=>"2", "genre"=>"Drama", "place_in_store"=>"Warehouse"}, "controller"=>"movies"}
+  [4;36;1mUser Load (0.000378)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000237)[0m   [0mSELECT * FROM movies WHERE (movies.movie_code = 2) LIMIT 1[0m
+  [4;36;1mMovie Create (0.000346)[0m   [0;1mINSERT INTO movies ("movie_year", "updated_at", "available", "movie_title", "category_code", "movie_original_title", "country", "movie_director", "movie_code", "genre", "place_in_store", "created_at") VALUES(1880, '2008-06-05 00:54:13', 't', 'La Clásica', 2, 'The Classic', 'USA', 'Old Director', 2, 'Drama', 'Warehouse', '2008-06-05 00:54:13')[0m
+Redirected to http://localhost:3000/movies/16
+Completed in 0.15397 (6 reqs/sec) | DB: 0.00096 (0%) | 302 Found [http://localhost/movies]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2008-06-05 00:54:13) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiIE1vdmll%0AIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7CVQ%3D--5ffa5f12204d16340dba0b363771646081e4e063
+  Parameters: {"action"=>"show", "id"=>"16", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000398)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000577)[0m   [0;1mSELECT * FROM movies WHERE (movies."id" = 16) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 0.02794 (35 reqs/sec) | Rendering: 0.00411 (14%) | DB: 0.00098 (3%) | 200 OK [http://localhost/movies/16]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 00:54:15) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000382)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.001019)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.02972 (33 reqs/sec) | Rendering: 0.00846 (28%) | DB: 0.00140 (4%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#av (for 127.0.0.1 at 2008-06-05 00:54:19) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"av", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000374)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000838)[0m   [0;1mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+Rendering template within layouts/movies
+Rendering movies/av
+Completed in 0.02874 (34 reqs/sec) | Rendering: 0.00540 (18%) | DB: 0.00121 (4%) | 200 OK [http://localhost/movies/av]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 00:54:21) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mUser Load (0.000393)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000631)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.02735 (36 reqs/sec) | Rendering: 0.00669 (24%) | DB: 0.00102 (3%) | 200 OK [http://localhost/categories]
+
+
+Processing MoviesController#showincategory (for 127.0.0.1 at 2008-06-05 00:54:27) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"category_code"=>"2", "action"=>"showincategory", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000377)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000664)[0m   [0;1mSELECT * FROM movies WHERE (movies."category_code" = '2') [0m
+Rendering template within layouts/movies
+Rendering movies/showincategory
+Completed in 0.02869 (34 reqs/sec) | Rendering: 0.00517 (18%) | DB: 0.00104 (3%) | 200 OK [http://localhost/movies/showincategory?category_code=2]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 00:54:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mUser Load (0.000379)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.001154)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.09191 (10 reqs/sec) | Rendering: 0.00675 (7%) | DB: 0.00153 (1%) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 00:56:39) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mUser Load (0.000404)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000663)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.02736 (36 reqs/sec) | Rendering: 0.00652 (23%) | DB: 0.00107 (3%) | 200 OK [http://localhost/categories]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 00:56:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000399)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.001082)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.02945 (33 reqs/sec) | Rendering: 0.00842 (28%) | DB: 0.00148 (5%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#edit (for 127.0.0.1 at 2008-06-05 00:56:46) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"edit", "id"=>"15", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000444)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000625)[0m   [0;1mSELECT * FROM movies WHERE (movies."id" = 15) [0m
+  [4;35;1mCategory Load (0.000634)[0m   [0mSELECT * FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM categories [0m
+Completed in 0.04638 (21 reqs/sec) | Rendering: 0.01363 (29%) | DB: 0.00170 (3%) | 200 OK [http://localhost/movies/15/edit]
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2008-06-05 00:56:50) [PUT]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "_method"=>"put", "action"=>"update", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"1", "movie_original_title"=>"tres", "category_code"=>"2", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"12", "genre"=>"cinco", "place_in_store"=>"siete"}, "id"=>"15", "controller"=>"movies"}
+  [4;35;1mUser Load (0.001191)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000564)[0m   [0;1mSELECT * FROM movies WHERE (movies."id" = 15) [0m
+  [4;35;1mMovie Load (0.000225)[0m   [0mSELECT * FROM movies WHERE (movies.movie_code = 12 AND movies.id <> 15) LIMIT 1[0m
+  [4;36;1mMovie Update (0.000330)[0m   [0;1mUPDATE movies SET "created_at" = '2008-06-05 00:51:28', "movie_original_title" = 'tres', "genre" = 'cinco', "movie_year" = 1999, "category_code" = 2, "place_in_store" = 'siete', "country" = 'seis', "movie_code" = 12, "movie_director" = 'cuatro', "movie_title" = 'dos', "available" = 't', "updated_at" = '2008-06-05 00:56:50' WHERE "id" = 15[0m
+Redirected to http://localhost:3000/movies/15
+Completed in 0.14165 (7 reqs/sec) | DB: 0.00231 (1%) | 302 Found [http://localhost/movies/15]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2008-06-05 00:56:50) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJE1vdmll%0AIHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4GOgpAdXNlZHsGOwlU--93ac45229f6c7266c6ec6e4025d2ecdd08dc342c
+  Parameters: {"action"=>"show", "id"=>"15", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000396)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.000569)[0m   [0;1mSELECT * FROM movies WHERE (movies."id" = 15) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 0.02865 (34 reqs/sec) | Rendering: 0.00467 (16%) | DB: 0.00097 (3%) | 200 OK [http://localhost/movies/15]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 00:56:52) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000408)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.001053)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.03070 (32 reqs/sec) | Rendering: 0.00871 (28%) | DB: 0.00146 (4%) | 200 OK [http://localhost/movies]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-05 00:59:51) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000394)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000282)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000306)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000254)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06199 (16 reqs/sec) | Rendering: 0.00286 (4%) | DB: 0.00232 (3%) | 200 OK [http://localhost/login]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-05 00:59:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;35;1mRent Load (0.001037)[0m   [0mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.08119 (12 reqs/sec) | Rendering: 0.00541 (6%) | DB: 0.00104 (1%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-05 00:59:56) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+Rendering template within layouts/rents
+Rendering rents/new
+Completed in 0.02174 (46 reqs/sec) | Rendering: 0.00985 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rents/new]
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-05 01:02:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+Rendering template within layouts/rents
+Rendering rents/new
+
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Movies) on line #13 of rents/new.html.erb:
+10: 
+11:   <p>
+12:     <b>Movie code</b><br />
+13:     <%=f.collection_select :movie_code,Movies.find_all_by_available(true),:movie_code,:movie_title %>
+14:     <%= f.text_field :movie_code %>
+15:   </p>
+16: 
+
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:263:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:453:in `const_missing'
+    app/views/rents/new.html.erb:13:in `_run_erb_47app47views47rents47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/rents/new.html.erb:5:in `_run_erb_47app47views47rents47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/rents_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-05 01:03:51) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+  [4;36;1mMovie Load (0.001043)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/rents
+Rendering rents/new
+
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Movies) on line #13 of rents/new.html.erb:
+10: 
+11:   <p>
+12:     <b>Movie code</b><br />
+13:     <%=f.collection_select :movie_code,Movies.find_all_by_available(true),:movie_code,:movie_title %>
+14:     <%= f.text_field :movie_code %>
+15:   </p>
+16: 
+
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:263:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:453:in `const_missing'
+    app/views/rents/new.html.erb:13:in `_run_erb_47app47views47rents47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:184:in `form_for'
+    app/views/rents/new.html.erb:5:in `_run_erb_47app47views47rents47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:858:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:872:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:156:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:150:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/rents_controller.rb:32:in `new'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /var/lib/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    Desktop/bd/videos/script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-05 01:04:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+  [4;35;1mMovie Load (0.001053)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/rents
+Rendering rents/new
+  [4;36;1mMovie Load (0.001071)[0m   [0;1mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+Completed in 0.03554 (28 reqs/sec) | Rendering: 0.01550 (43%) | DB: 0.00212 (5%) | 200 OK [http://localhost/rents/new]
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-05 01:04:50) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+  [4;35;1mMovie Load (0.001009)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/rents
+Rendering rents/new
+  [4;36;1mMovie Load (0.000978)[0m   [0;1mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+Completed in 0.03319 (30 reqs/sec) | Rendering: 0.01396 (42%) | DB: 0.00199 (5%) | 200 OK [http://localhost/rents/new]
+
+
+Processing RentsController#create (for 127.0.0.1 at 2008-06-05 01:05:05) [POST]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "controller"=>"rents", "rent"=>{"rent_code"=>"1", "exp_date(1i)"=>"2008", "exp_date(2i)"=>"6", "client_code"=>"dos", "exp_date(3i)"=>"5", "movie_code"=>"12", "rent_date(1i)"=>"2008", "emp_code"=>"tres", "rent_date(2i)"=>"6", "rent_date(3i)"=>"5"}}
+  [4;35;1mRent Load (0.000231)[0m   [0mSELECT * FROM rents WHERE (rents.rent_code = 1) LIMIT 1[0m
+Rendering template within layouts/rents
+Rendering rents/new
+  [4;36;1mMovie Load (0.001037)[0m   [0;1mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+Completed in 0.03660 (27 reqs/sec) | Rendering: 0.01873 (51%) | DB: 0.00127 (3%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#create (for 127.0.0.1 at 2008-06-05 01:05:18) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "controller"=>"rents", "rent"=>{"rent_code"=>"1", "exp_date(1i)"=>"2008", "exp_date(2i)"=>"6", "client_code"=>"11", "exp_date(3i)"=>"5", "movie_code"=>"12", "rent_date(1i)"=>"2008", "emp_code"=>"22", "rent_date(2i)"=>"6", "rent_date(3i)"=>"5"}}
+  [4;35;1mRent Load (0.000338)[0m   [0mSELECT * FROM rents WHERE (rents.rent_code = 1) LIMIT 1[0m
+  [4;36;1mRent Create (0.000455)[0m   [0;1mINSERT INTO rents ("rent_code", "updated_at", "rent_date", "client_code", "movie_code", "emp_code", "exp_date", "created_at") VALUES(1, '2008-06-05 01:05:18', '2008-06-05', 11, 12, 22, '2008-06-05', '2008-06-05 01:05:18')[0m
+Redirected to http://localhost:3000/rents/4
+Completed in 0.30057 (3 reqs/sec) | DB: 0.00079 (0%) | 302 Found [http://localhost/rents]
+
+
+Processing RentsController#show (for 127.0.0.1 at 2008-06-05 01:05:18) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiI1JlbnQg%0Ad2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7CVQ%3D--7b56df64c82484bc67e8fd84621833fffa6137a0
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"rents"}
+  [4;35;1mRent Load (0.000434)[0m   [0mSELECT * FROM rents WHERE (rents."id" = 4) [0m
+Rendering template within layouts/rents
+Rendering rents/show
+Completed in 0.01819 (54 reqs/sec) | Rendering: 0.00578 (31%) | DB: 0.00043 (2%) | 200 OK [http://localhost/rents/4]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-05 01:05:21) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;36;1mRent Load (0.001218)[0m   [0;1mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01856 (53 reqs/sec) | Rendering: 0.00732 (39%) | DB: 0.00122 (6%) | 200 OK [http://localhost/rents]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-05 01:05:30) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000378)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000276)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000287)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06239 (16 reqs/sec) | Rendering: 0.00278 (4%) | DB: 0.00224 (3%) | 200 OK [http://localhost/login]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 01:05:35) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;35;1mUser Load (0.000374)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mMovie Load (0.001024)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.02892 (34 reqs/sec) | Rendering: 0.00828 (28%) | DB: 0.00140 (4%) | 200 OK [http://localhost/movies]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2008-06-05 01:07:24) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"categories"}
+  [4;35;1mUser Load (0.000392)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mCategory Load (0.000647)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 0.02731 (36 reqs/sec) | Rendering: 0.00648 (23%) | DB: 0.00104 (3%) | 200 OK [http://localhost/categories]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-05 01:07:26) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;35;1mUser Load (0.000380)[0m   [0mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT count(*) AS count_all FROM rents [0m
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT count(*) AS count_all FROM returns [0m
+  [4;36;1mSQL (0.000269)[0m   [0;1mSELECT count(*) AS count_all FROM movies [0m
+  [4;35;1mSQL (0.000265)[0m   [0mSELECT count(*) AS count_all FROM clients [0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mSELECT count(*) AS count_all FROM employees [0m
+  [4;35;1mSQL (0.000270)[0m   [0mSELECT count(*) AS count_all FROM categories [0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06186 (16 reqs/sec) | Rendering: 0.00279 (4%) | DB: 0.00222 (3%) | 200 OK [http://localhost/login]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-05 01:07:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;35;1mRent Load (0.001216)[0m   [0mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01807 (55 reqs/sec) | Rendering: 0.00698 (38%) | DB: 0.00122 (6%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-05 01:07:30) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+  [4;36;1mMovie Load (0.001036)[0m   [0;1mSELECT * FROM movies [0m
+Rendering template within layouts/rents
+Rendering rents/new
+  [4;35;1mMovie Load (0.001003)[0m   [0mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+  [4;36;1mClient Load (0.000270)[0m   [0;1mSELECT * FROM clients [0m
+Completed in 0.04275 (23 reqs/sec) | Rendering: 0.02191 (51%) | DB: 0.00231 (5%) | 200 OK [http://localhost/rents/new]
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-05 01:08:14) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+  [4;35;1mMovie Load (0.001020)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/rents
+Rendering rents/new
+  [4;36;1mMovie Load (0.000995)[0m   [0;1mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+  [4;35;1mClient Load (0.016589)[0m   [0mSELECT * FROM clients [0m
+  [4;36;1mEmployee Load (0.000411)[0m   [0;1mSELECT * FROM employees [0m
+Completed in 0.13249 (7 reqs/sec) | Rendering: 0.09073 (68%) | DB: 0.01901 (14%) | 200 OK [http://localhost/rents/new]
+
+
+Processing RentsController#create (for 127.0.0.1 at 2008-06-05 01:08:19) [POST]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "action"=>"create", "controller"=>"rents", "rent"=>{"rent_code"=>"3", "exp_date(1i)"=>"2008", "exp_date(2i)"=>"6", "exp_date(3i)"=>"5", "movie_code"=>"1", "rent_date(1i)"=>"2008", "rent_date(2i)"=>"6", "rent_date(3i)"=>"5"}}
+  [4;35;1mRent Load (0.000229)[0m   [0mSELECT * FROM rents WHERE (rents.rent_code = 3) LIMIT 1[0m
+Rendering template within layouts/rents
+Rendering rents/new
+  [4;36;1mMovie Load (0.001004)[0m   [0;1mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+  [4;35;1mClient Load (0.000262)[0m   [0mSELECT * FROM clients [0m
+  [4;36;1mEmployee Load (0.000252)[0m   [0;1mSELECT * FROM employees [0m
+Completed in 0.04953 (20 reqs/sec) | Rendering: 0.03170 (63%) | DB: 0.00175 (3%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-05 01:08:23) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;35;1mRent Load (0.001211)[0m   [0mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01747 (57 reqs/sec) | Rendering: 0.00698 (39%) | DB: 0.00121 (6%) | 200 OK [http://localhost/rents]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-05 01:08:35) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000432)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mSQL (0.000306)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000307)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.06519 (15 reqs/sec) | Rendering: 0.00280 (4%) | DB: 0.00239 (3%) | 200 OK [http://localhost/login]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 01:08:36) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000382)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.001031)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.02901 (34 reqs/sec) | Rendering: 0.00840 (28%) | DB: 0.00141 (4%) | 200 OK [http://localhost/movies]
+
+
+Processing MoviesController#edit (for 127.0.0.1 at 2008-06-05 01:08:42) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"edit", "id"=>"15", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000440)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000586)[0m   [0mSELECT * FROM movies WHERE (movies."id" = 15) [0m
+  [4;36;1mCategory Load (0.000635)[0m   [0;1mSELECT * FROM categories [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM categories [0m
+Completed in 0.04372 (22 reqs/sec) | Rendering: 0.01031 (23%) | DB: 0.00166 (3%) | 200 OK [http://localhost/movies/15/edit]
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2008-06-05 01:08:45) [PUT]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8a1ef062b3f4dfb702602ada27247b7cd030e206", "_method"=>"put", "action"=>"update", "movie"=>{"movie_year"=>"1999", "movie_title"=>"dos", "available"=>"0", "movie_original_title"=>"tres", "category_code"=>"2", "country"=>"seis", "movie_director"=>"cuatro", "movie_code"=>"12", "genre"=>"cinco", "place_in_store"=>"siete"}, "id"=>"15", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000378)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000611)[0m   [0mSELECT * FROM movies WHERE (movies."id" = 15) [0m
+  [4;36;1mMovie Load (0.000226)[0m   [0;1mSELECT * FROM movies WHERE (movies.movie_code = 12 AND movies.id <> 15) LIMIT 1[0m
+  [4;35;1mMovie Update (0.000311)[0m   [0mUPDATE movies SET "created_at" = '2008-06-05 00:51:28', "movie_original_title" = 'tres', "genre" = 'cinco', "movie_year" = 1999, "category_code" = 2, "place_in_store" = 'siete', "country" = 'seis', "movie_code" = 12, "movie_director" = 'cuatro', "movie_title" = 'dos', "available" = 'f', "updated_at" = '2008-06-05 01:08:45' WHERE "id" = 15[0m
+Redirected to http://localhost:3000/movies/15
+Completed in 0.30496 (3 reqs/sec) | DB: 0.00153 (0%) | 302 Found [http://localhost/movies/15]
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2008-06-05 01:08:45) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJE1vdmll%0AIHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4GOgpAdXNlZHsGOwlU--93ac45229f6c7266c6ec6e4025d2ecdd08dc342c
+  Parameters: {"action"=>"show", "id"=>"15", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000371)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.000580)[0m   [0mSELECT * FROM movies WHERE (movies."id" = 15) [0m
+Rendering template within layouts/movies
+Rendering movies/show
+Completed in 0.02703 (36 reqs/sec) | Rendering: 0.00400 (14%) | DB: 0.00095 (3%) | 200 OK [http://localhost/movies/15]
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2008-06-05 01:08:47) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"movies"}
+  [4;36;1mUser Load (0.000392)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mMovie Load (0.001055)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 0.03054 (32 reqs/sec) | Rendering: 0.00862 (28%) | DB: 0.00145 (4%) | 200 OK [http://localhost/movies]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-06-05 01:08:53) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mUser Load (0.000617)[0m   [0;1mSELECT * FROM users WHERE (users."id" = 6) LIMIT 1[0m
+  [4;35;1mSQL (0.000418)[0m   [0mSELECT count(*) AS count_all FROM rents [0m
+  [4;36;1mSQL (0.000406)[0m   [0;1mSELECT count(*) AS count_all FROM returns [0m
+  [4;35;1mSQL (0.000420)[0m   [0mSELECT count(*) AS count_all FROM movies [0m
+  [4;36;1mSQL (0.000414)[0m   [0;1mSELECT count(*) AS count_all FROM clients [0m
+  [4;35;1mSQL (0.000265)[0m   [0mSELECT count(*) AS count_all FROM employees [0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT count(*) AS count_all FROM categories [0m
+  [4;35;1mSQL (0.000226)[0m   [0mSELECT count(*) AS count_all FROM users [0m
+Rendering login/index
+Completed in 0.09274 (10 reqs/sec) | Rendering: 0.00279 (3%) | DB: 0.00304 (3%) | 200 OK [http://localhost/login]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-05 01:08:55) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;36;1mRent Load (0.001230)[0m   [0;1mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.08149 (12 reqs/sec) | Rendering: 0.00719 (8%) | DB: 0.00123 (1%) | 200 OK [http://localhost/rents]
+
+
+Processing RentsController#new (for 127.0.0.1 at 2008-06-05 01:08:57) [GET]
+  Session ID: BAh7CToMY3NyZl9pZCIlYzBkNDZhYWY4YWM5ODM2NDY2MjZlZWY0MDQ2NDM5%0AMWY6DHVzZXJfaWRpCzoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--31dc2ea2ea08b5f7b9b9fce91b6f94235fa7e43e
+  Parameters: {"action"=>"new", "controller"=>"rents"}
+  [4;35;1mMovie Load (0.001035)[0m   [0mSELECT * FROM movies [0m
+Rendering template within layouts/rents
+Rendering rents/new
+  [4;36;1mMovie Load (0.000793)[0m   [0;1mSELECT * FROM movies WHERE (movies."available" = 't') [0m
+  [4;35;1mClient Load (0.000264)[0m   [0mSELECT * FROM clients [0m
+  [4;36;1mEmployee Load (0.000244)[0m   [0;1mSELECT * FROM employees [0m
+Completed in 0.04601 (21 reqs/sec) | Rendering: 0.02599 (56%) | DB: 0.00234 (5%) | 200 OK [http://localhost/rents/new]
+
+
+Processing RentsController#index (for 127.0.0.1 at 2008-06-05 01:09:01) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkLOgxjc3JmX2lkIiVjMGQ0NmFhZjhhYzk4MzY0NjYy%0ANmVlZjQwNDY0MzkxZjoRb3JpZ2luYWxfdXJpMCIKZmxhc2hJQzonQWN0aW9u%0AQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA%3D%3D--668301a79d9cf0c77c6bb39540522014172f5431
+  Parameters: {"action"=>"index", "controller"=>"rents"}
+  [4;35;1mRent Load (0.001164)[0m   [0mSELECT * FROM rents [0m
+Rendering template within layouts/rents
+Rendering rents/index
+Completed in 0.01728 (57 reqs/sec) | Rendering: 0.00688 (39%) | DB: 0.00116 (6%) | 200 OK [http://localhost/rents]
