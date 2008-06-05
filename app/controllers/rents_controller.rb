@@ -1,6 +1,6 @@
 class RentsController < ApplicationController
 ## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
-##before_filter :authorize
+before_filter :authorize
   # GET /rents
   # GET /rents.xml
   def index
@@ -16,7 +16,9 @@ class RentsController < ApplicationController
   # GET /rents/1.xml
   def show
     @rent = Rent.find(params[:id])
-    @movie = @rent.movie_code
+    @movie = Movie.find_by_movie_code(@rent.movie_code).movie_title
+        @client = Client.find_by_client_code(@rent.client_code).client_name
+            @emp = Employee.find_by_emp_code(@rent.emp_code).emp_name
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @rent }
@@ -31,6 +33,7 @@ class RentsController < ApplicationController
       format.html # new.html.erb
       format.xml  { render :xml => @rent }
      ## @movie = Movie.find(params :)
+
     end
   end
 
@@ -72,6 +75,8 @@ class RentsController < ApplicationController
       end
     end
   end
+
+
 
   # DELETE /rents/1
   # DELETE /rents/1.xml

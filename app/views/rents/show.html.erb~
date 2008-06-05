@@ -7,7 +7,7 @@
 <p>
   <b>Movie code:</b>
   <%=h @rent.movie_code %>
-  <%=h Movie.find_by_movie_code(@movie).movie_title%>
+  <%=h @movie%>
 </p>
 
 <p>
