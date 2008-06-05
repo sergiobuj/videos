@@ -49,7 +49,7 @@ before_filter :authorize
 
     respond_to do |format|
       if @rent.save
-              @movie = Movie.find_by_movie_code(@rent.movie_code)
+        @movie = Movie.find_by_movie_code(@rent.movie_code)
         @movie.available=false
         @movie.save
         flash[:notice] = 'Rent was successfully created.'
@@ -85,6 +85,9 @@ before_filter :authorize
   # DELETE /rents/1.xml
   def destroy
     @rent = Rent.find(params[:id])
+    @movie = Movie.find_by_movie_code(@rent.movie_code)
+    @movie.available=true
+    @movie.save    
     @rent.destroy
 
     respond_to do |format|
@@ -102,7 +105,7 @@ before_filter :authorize
     end
   end
     def rentedemp
-    @rents = Rent.find_all_by_emp_code(params[:client_code])
+    @rents = Rent.find_all_by_emp_code(params[:emp_code])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @rents }

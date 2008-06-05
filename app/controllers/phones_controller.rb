@@ -28,7 +28,7 @@ before_filter :authorize
   # GET /phones/new
   # GET /phones/new.xml
   def new
-    @phone = @owner.phones.build
+    @phone = Phone.new
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @phone }

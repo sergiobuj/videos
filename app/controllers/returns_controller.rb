@@ -30,6 +30,7 @@ before_filter :authorize
   # GET /returns/new.xml
   def new
     @return = Return.new
+    @return.charges = 0
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @return }
@@ -84,6 +85,9 @@ before_filter :authorize
   # DELETE /returns/1.xml
   def destroy
     @return = Return.find(params[:id])
+    @rent = Rent.find_by_rent_code(@return.rent_code)
+    @rent.alive =true
+    @rent.save
     @return.destroy
 
     respond_to do |format|

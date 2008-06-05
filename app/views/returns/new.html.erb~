@@ -5,7 +5,7 @@
 <% form_for(@return) do |f| %>
   <p>
     <b>Rent code</b><br />
-    <%=f.collection_select :rent_code,Rent.find(:all),:rent_code,:rent_code %>
+    <%=f.collection_select :rent_code,Rent.find_all_by_alive(true),:rent_code,:rent_code %>
   </p>
 
   <p>
@@ -15,7 +15,7 @@
 
   <p>
     <b>Charges</b><br />
-    <%= f.text_field :charges%>
+    <%= f.text_field :charges , %>
   </p>
 
   <p>

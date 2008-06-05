@@ -21,13 +21,11 @@ before_filter :authorize, :except => :login
 	    session[:user_id] = user.id
 	    uri = session[:original_uri]
 	    session[:original_uri] = nil
-
 	    redirect_to(:action => "index" )
 	  else
 	    flash.now[:notice] = "Invalid user or password"
 	  end
 	end
-
   end
 
 ##termina la sesión de un usuario
@@ -35,7 +33,6 @@ before_filter :authorize, :except => :login
 	session[:user_id] = nil
 	flash[:notice] = "Logged out"
 	redirect_to(:action => "login" )
-
   end
 
 ##inicio de sesión
@@ -47,7 +44,6 @@ before_filter :authorize, :except => :login
   @total_employees = Employee.count
   @total_categories = Category.count
   @total_users = User.count
-  user = User.find(params[:id])
   end
 
 ##elimina un usuario
@@ -62,7 +58,6 @@ before_filter :authorize, :except => :login
 	  end
 	end
 	redirect_to(:action => :list_users)
-
   end
 
 ##muestra la lista de los usuarios registrados

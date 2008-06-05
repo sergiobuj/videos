@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
 ## Se asegura de que solo se pueda accesar cuando hay una sesión abierta
 before_filter :authorize
+    auto_complete_for :movie, :movie_title
   
   
   ##Método que muestra en pantalla la lista de todas las peliculas registrdas
@@ -8,7 +9,7 @@ before_filter :authorize
   # GET /movies.xml
   def index
     @movies = Movie.find(:all)
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @movies }
@@ -118,12 +119,15 @@ before_filter :authorize
    
    def showincategory
     @movies = Movie.find_all_by_category_code(params[:category_code])
+    if @movies.size.zero?
+    flash[:notice] = 'Category Empty.'
+    else
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @movies }
     end  
    end
-
+end
 
   
 end

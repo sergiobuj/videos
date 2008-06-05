@@ -49,7 +49,7 @@ before_filter :authorize
 
     respond_to do |format|
       if @rent.save
-              @movie = Movie.find_by_movie_code(@rent.movie_code)
+        @movie = Movie.find_by_movie_code(@rent.movie_code)
         @movie.available=false
         @movie.save
         flash[:notice] = 'Rent was successfully created.'
@@ -85,6 +85,11 @@ before_filter :authorize
   # DELETE /rents/1.xml
   def destroy
     @rent = Rent.find(params[:id])
+    @movie = Movie.find_by_movie_code(@rent.movie_code)
+    @movie.available=true
+    @movie.save
+    @return = Return.find_by_rent_code(@rent.rent_code)
+    @return.destroy
     @rent.destroy
 
     respond_to do |format|
